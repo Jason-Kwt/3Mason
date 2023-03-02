@@ -19,7 +19,7 @@ function Navbar() {
     setIsOpenMenu(!isOpenMenu);
   };
   return (
-    <nav className="w-full top-0 z-10 fixed bg-gray-700 ">
+    <nav className="w-full top-0 z-10 fixed bg-transparent">
       {/* Navbar */}
       <div className="border-2 border-red-500 container mx-auto flex justify-between items-center py-4 px-4">
         <div className="text-3xl text-white">Logo</div>
