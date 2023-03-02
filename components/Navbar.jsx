@@ -3,8 +3,11 @@
 import React from "react";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { FiMenu } from "react-icons/fi";
+
+import logo_site from "../assets/logo_site.png"
 
 function Navbar() {
   const navigation = [
@@ -22,7 +25,12 @@ function Navbar() {
     <nav className="w-full top-0 z-10 fixed bg-transparent">
       {/* Navbar */}
       <div className="border-2 border-red-500 container mx-auto flex justify-between items-center py-4 px-4">
-        <div className="text-3xl text-white">Logo</div>
+        <Link
+          href="/"
+          className="font-semibold transition hover:text-black hover:scale-125 duration-300"
+        >
+          <Image src={logo_site} alt="3Masons Logo" unoptimized />
+        </Link>
         <div className="hidden md:flex gap-16 text-white">
           {navigation.map((item) => (
             <Link
@@ -47,7 +55,7 @@ function Navbar() {
       {isOpenMenu ? (
         <div className="w-screen h-screen top-0 bg-black fixed inset-0  overflow-y-auto z-10">
           <div className="border-2 border-red-500 container mx-auto flex justify-between items-center py-4 px-4">
-            <div className="text-3xl text-white">Logo</div>
+            <Image src={logo_site} alt="3Masons Logo" unoptimized />
 
             <button
               className="md:hidden text-white text-3xl"

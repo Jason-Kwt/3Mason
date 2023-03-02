@@ -2,7 +2,7 @@
 import React from "react";
 import Typewriter from 'typewriter-effect';
 
-import bg_section1 from '../assets/bg_section1.png'
+import bg_section1 from '../assets/section1/bg_section1.png'
 
 function section1() {
   return (
@@ -25,7 +25,7 @@ function section1() {
                 ChangeDeleteSpeed: 20,
                 autoStart: true,
                 loop: true,
-                wrapperClassName: "text-2xl lg:text-4xl tracking-widest tracking-[0.2em] font-semibold",
+                wrapperClassName: "text-2xl lg:text-4xl  tracking-[0.2em] font-semibold",
                 cursorClassName: "text-2xl lg:text-4xl  tracking-[0.2em]",
               }}
             />
@@ -38,7 +38,7 @@ function section1() {
           </div>
         </div>
       </div>
-    </section >
+    </section>
   );
 }
 

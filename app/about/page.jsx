@@ -1,6 +1,5 @@
 import React from "react";
-import Section1 from "@/sections/section1";
-import Section2 from "@/sections/section2";
+import Section5 from "@/sections/section5";
 
 export const metadata = {
   title: "About page",
@@ -9,7 +8,11 @@ export const metadata = {
 
 function aboutPage() {
   return (
-    <main className="overflow-hidden h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth"></main>
+    <main className="overflow-hidden h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+
+      <Section5 />
+
+    </main>
   );
 }
 
