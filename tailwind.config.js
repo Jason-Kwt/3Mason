@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      scale: {
+        '-100': '-1',
+      }
 
     },
   },

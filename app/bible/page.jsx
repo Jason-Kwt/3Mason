@@ -1,4 +1,6 @@
 import React from 'react'
+import Section9 from "@/sections/section9";
+import Section10 from "@/sections/section10";
 
 export const metadata = {
     title: 'biblePage',
@@ -7,8 +9,11 @@ export const metadata = {
 
 function biblePage() {
     return (
-        <div>about page</div>
-    )
+        <main className="overflow-hidden h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+            <Section9 />
+            <Section10 />
+        </main>
+    );
 }
 
 export default biblePage

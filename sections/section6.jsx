@@ -3,16 +3,15 @@ import React from "react";
 import Typewriter from 'typewriter-effect';
 
 
-function section5() {
+function section6() {
     return (
         <section
-            id="section5"
-            className=" h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat"
-
+            id="section6"
+            className="h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat"
         >
             <div className="absolute w-full h-screen top-0 flex flex-col p-4 justify-center items-center">
                 <div className="text-white text-center">
-                    <h1 className="lg:text-9xl md:text-7xl text-4xl tracking-[0.1em] font-black">Section5</h1>
+                    <h1 className="lg:text-9xl md:text-7xl text-4xl tracking-[0.1em] font-black">Section6</h1>
                     <div className="mt-8 lg:mt-16">
                         <Typewriter
                             options={{
@@ -36,4 +35,4 @@ function section5() {
     );
 }
 
-export default section5;
+export default section6;

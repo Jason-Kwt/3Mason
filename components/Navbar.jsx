@@ -4,6 +4,8 @@ import React from "react";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from 'framer-motion';
+import { navVariants } from '../utils/motion';
 
 import { FiMenu } from "react-icons/fi";
 
@@ -22,21 +24,25 @@ function Navbar() {
     setIsOpenMenu(!isOpenMenu);
   };
   return (
-    <nav className="w-full top-0 z-10 fixed bg-transparent">
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      className="w-full top-0 z-10 fixed bg-transparent">
       {/* Navbar */}
-      <div className="border-2 border-red-500 container mx-auto flex justify-between items-center py-4 px-4">
+      <div className=" container mx-auto flex justify-between items-center py-4 px-4">
         <Link
           href="/"
-          className="font-semibold transition hover:text-black hover:scale-125 duration-300"
+          className="font-semibold transition"
         >
           <Image src={logo_site} alt="3Masons Logo" unoptimized />
         </Link>
-        <div className="hidden md:flex gap-16 text-white">
+        <div className="hidden md:flex gap-8 lg:gap-32 text-white">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="font-semibold transition hover:text-black hover:scale-125 duration-300"
+              className="font-black xl:text-xl text-md transition hover:scale-125 duration-300"
             >
               {item.name}
             </Link>
@@ -44,7 +50,7 @@ function Navbar() {
         </div>
         {/* Menu bar button */}
         <button
-          className="md:hidden text-white text-3xl"
+          className="md:hidden text-white text-3xl mr-4"
           onClick={handleOpenMenu}
         >
           <FiMenu />
@@ -54,11 +60,11 @@ function Navbar() {
       {/* Menu bar  */}
       {isOpenMenu ? (
         <div className="w-screen h-screen top-0 bg-black fixed inset-0  overflow-y-auto z-10">
-          <div className="border-2 border-red-500 container mx-auto flex justify-between items-center py-4 px-4">
+          <div className=" container mx-auto flex justify-between items-center py-4 px-4">
             <Image src={logo_site} alt="3Masons Logo" unoptimized />
 
             <button
-              className="md:hidden text-white text-3xl"
+              className="md:hidden text-white text-3xl mr-4"
               onClick={handleOpenMenu}
             >
               <FiMenu />
@@ -80,7 +86,7 @@ function Navbar() {
       ) : (
         <div className="hidden"></div>
       )}
-    </nav>
+    </motion.nav>
   );
 }
 
