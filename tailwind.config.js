@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +9,7 @@ module.exports = {
   ],
   theme: {
     backgroundImage: {
+      section1: "url('../assets/section1/bg_section1.png')",
       section5: "url('../assets/section5/bg_section5.png')",
       section5_2: "url('../assets/section5/bg_section5_2.png')",
       section6: "url('../assets/section6/bg_section6.png')",
@@ -24,6 +27,10 @@ module.exports = {
         '3xl': '1.953rem',
         '4xl': '2.441rem',
         '5xl': '3.052rem',
+      },
+      fontFamily: {
+        syncopate: ['var(--font-syncopate)', ...fontFamily.sans],
+        raleway: ['var(--font-raleway)', ...fontFamily.sans],
       },
     },
   },

@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { fadeIn, staggerContainer } from '../utils/motion';
 import bg_section4 from '../assets/section4/bg_section4.png';
 
 import group_01 from '../assets/section4/group_01.png';
@@ -24,10 +25,19 @@ function section4() {
       style={{ backgroundImage: `url(${bg_section4.src})` }}
     >
       {/* container part */}
-      <div className="container mx-auto h-full w-full pt-24 pb-16 px-8">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className="container mx-auto h-full w-full pt-24 pb-16 px-8"
+      >
         {/*       left side title img */}
         <div className=" w-full h-full top-0 flex flex-col xl:flex-row xl:justify-center xl:items-center justify-center items-center gap-2">
-          <div className=" w-[360px] md:w-[510px] lg:w-[510px] xl:w-[850px] h-[350px] md:h-[550px] order-first mt-16 grid grid-rows-3 justify-center justify-items-center items-center content-center relative">
+          <motion.div
+            variants={fadeIn('right', 'tween', 0.1, 0.5)}
+            className=" w-[360px] md:w-[510px] lg:w-[510px] xl:w-[850px] h-[350px] md:h-[550px] order-first mt-16 grid grid-rows-3 justify-center justify-items-center items-center content-center relative"
+          >
             <div className="h-full w-full">
               {/* ROW 1 */}
               <motion.div
@@ -159,9 +169,12 @@ function section4() {
                 />
               </motion.div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col gap-4">
+          <motion.div
+            variants={fadeIn('left', 'tween', 0.1, 0.5)}
+            className="flex flex-col gap-4"
+          >
             <div className="">
               <Image
                 src={section3_title}
@@ -180,10 +193,10 @@ function section4() {
                 className="object-cover w-[325px] lg:w-[325px] xl:w-[970px]"
               />
             </div>
-          </div>
+          </motion.div>
         </div>{' '}
         {/* end of left side title img */}
-      </div>{' '}
+      </motion.div>{' '}
       {/*  end of the container part */}
     </section>
   );

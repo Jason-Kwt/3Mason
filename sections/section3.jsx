@@ -1,7 +1,8 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-
+import { motion } from 'framer-motion';
+import { fadeIn, staggerContainer } from '../utils/motion';
 import bg_section3 from '../assets/section3/bg_section3.png';
 import section3_Origin from '../assets/section3/section3_Origin.png';
 import section3_Origin2 from '../assets/section3/section3_Origin2.png';
@@ -15,10 +16,19 @@ function section3() {
       style={{ backgroundImage: `url(${bg_section3.src})` }}
     >
       {/* container part */}
-      <div className="container mx-auto h-full w-full py-24 px-8">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className="container mx-auto h-full w-full py-24 px-8"
+      >
         {/*       left side title img */}
         <div className="w-full h-full top-0 flex flex-col xl:flex-row xl:justify-between xl:items-end justify-center items-center">
-          <div className="hidden xl:block  flex-initial lg:order-1">
+          <motion.div
+            variants={fadeIn('right', 'tween', 0.1, 0.5)}
+            className="hidden xl:block  flex-initial lg:order-1"
+          >
             <Image
               src={section3_Origin}
               alt=""
@@ -26,22 +36,25 @@ function section3() {
               quality={70}
               className="w-[0%] xl:w-[80%] 2xl:w-[100%]"
             />
-          </div>
+          </motion.div>
           <div className="block xl:hidden  flex-initial lg:order-1 mt-[100px]">
             <Image
               src={section3_Origin2}
               alt=""
               unoptimized
               quality={70}
-              className="w-[212px] md:w-[325px] lg:w-[649px]"
+              className="w-[212px] md:w-[325px] lg:w-[500px]"
             />
           </div>
 
-          <div className="text-justify text-white flex-1 2xl:p-8 md:p-8 xl:order-2 order-3">
-            <h3 className="font-bold text-lg md:text-2xl xl:text-4xl mb-6">
+          <motion.div
+            variants={fadeIn('up', 'tween', 0.1, 0.5)}
+            className=" text-white flex-1 xl:order-2 order-3 p-8"
+          >
+            <h3 className="font-bold text-lg md:text-2xl xl:text-4xl mb-6 leading-10 font-syncopate">
               THE LEGEND OF IIIMASONS
             </h3>
-            <p className="font-thin xl:text-lg md:text-md sm:text-sm text-xs">
+            <p className="font-thin xl:text-lg md:text-md sm:text-sm text-xs text-justify font-raleway">
               Behind the facade of Web3 lies a digital wild west where desires
               have been ruthlessly bred, and the greedy seek to manipulate and
               abuse the technology.Under a full moon, a pack of wolves moves
@@ -53,9 +66,12 @@ function section3() {
               in the Web3 world, where technology serves the greater good and
               empowers mankind.
             </p>
-          </div>
+          </motion.div>
 
-          <div className=" flex-initial xl:order-3 order-2">
+          <motion.div
+            variants={fadeIn('left', 'tween', 0.1, 0.5)}
+            className=" flex-initial xl:order-3 order-2"
+          >
             <Image
               src={section3_cat}
               alt=""
@@ -63,10 +79,10 @@ function section3() {
               quality={100}
               className="w-[250px] md:w-[450px] lg:w-[450px] xl:w-[700px]"
             />
-          </div>
+          </motion.div>
         </div>{' '}
         {/* end of left side title img */}
-      </div>{' '}
+      </motion.div>{' '}
       {/*  end of the container part */}
     </section>
   );

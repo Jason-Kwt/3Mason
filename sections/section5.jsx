@@ -2,7 +2,8 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-
+import { motion } from 'framer-motion';
+import { fadeIn, staggerContainer } from '../utils/motion';
 import section5_title from '../assets/section5/section5_title.png';
 import section5_title2 from '../assets/section5/section5_title2.png';
 import section5_button from '../assets/section5/section5_button.png';
@@ -14,10 +15,19 @@ function section5() {
       className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat relative bg-section5_2 lg:bg-section5"
     >
       {/* container part */}
-      <div className="container mx-auto h-full w-full py-24 px-8">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className="container mx-auto h-full w-full py-24 px-8"
+      >
         {/*       left side title img */}
         <div className="w-full h-full top-0 flex flex-col xl:flex-row  sm:justify-start md:justify-around xl:justify-between xl:items-end items-center">
-          <div className="hidden xl:block  flex-initial lg:order-1">
+          <motion.div
+            variants={fadeIn('right', 'tween', 0.2, 1)}
+            className="hidden xl:block  flex-initial lg:order-1"
+          >
             <Image
               src={section5_title}
               alt=""
@@ -25,7 +35,7 @@ function section5() {
               quality={70}
               className="w-[0%] xl:w-[80%] 2xl:w-[90%]"
             />
-          </div>
+          </motion.div>
           <div className="block xl:hidden  flex-initial lg:order-1 mt-[100px]">
             <Image
               src={section5_title2}
@@ -36,7 +46,10 @@ function section5() {
             />
           </div>
 
-          <div className=" text-justify text-white w-full xl:w-2/5 p-8 xl:order-2 order-3">
+          <motion.div
+            variants={fadeIn('left', 'tween', 0.2, 1)}
+            className="relative text-justify text-white w-full xl:w-2/5 p-8 xl:order-2 order-3"
+          >
             <p className="font-thin text-sm lg:text-lg md:text-md sm:text-md">
               I, as a 3MASON, pledge to apply my best expertise and enthusiasm
               towards improving the Web3 ecosystem and to consistently act with
@@ -61,10 +74,10 @@ function section5() {
                 className="w-[0%] xl:w-[80%] 2xl:w-[90%] mt-8"
               />
             </button>
-          </div>
+          </motion.div>
         </div>{' '}
         {/* end of left side title img */}
-      </div>{' '}
+      </motion.div>{' '}
       {/*  end of the container part */}
     </section>
   );

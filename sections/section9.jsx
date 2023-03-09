@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 
 import { motion } from 'framer-motion';
-import { staggerContainer } from '../utils/motion';
+import { fadeIn, staggerContainer } from '../utils/motion';
 
 import NFTCard from '@/components/NFTCard';
 import { exploreNFTs } from '@/constants';
@@ -20,10 +20,19 @@ function section9() {
       className="h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat"
     >
       {/* container part */}
-      <div className=" container mx-auto h-full w-full py-24 px-8">
+      <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className=" container mx-auto h-full w-full py-24 px-8"
+      >
         {/*       left side title img */}
         <div className=" w-full h-full top-0 flex flex-col xl:flex-row xl:justify-between xl:items-end justify-center items-center gap-2 lg:gap-8">
-          <div className="hidden xl:block  flex-initial lg:order-1">
+          <motion.div
+            variants={fadeIn('right', 'tween', 0.2, 1)}
+            className="hidden xl:block  flex-initial lg:order-1"
+          >
             <Image
               src={section3_Origin}
               alt="origin"
@@ -31,7 +40,7 @@ function section9() {
               quality={100}
               className="w-[0] lg:w-[0] xl:w-[100%]"
             />
-          </div>
+          </motion.div>
           <div className="block xl:hidden  flex-initial lg:order-1 mt-[100px]">
             <Image
               src={section3_Origin2}
@@ -64,7 +73,7 @@ function section9() {
             </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
