@@ -1,19 +1,22 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import bg_section3 from '../assets/section3/bg_section3.png';
+import bg_section3_01 from '../assets/section3/bg_section3_01.png';
 import section3_Origin from '../assets/section3/section3_Origin.png';
 import section3_Origin2 from '../assets/section3/section3_Origin2.png';
-import section3_cat from '../assets/section3/section3_cat.png';
+import { exploreSlide } from '@/constants';
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 function section3() {
+  const [activeSlide, setActiveSlide] = useState('slide-1');
+
   return (
     <section
       id="section3"
       className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat relative"
-      style={{ backgroundImage: `url(${bg_section3.src})` }}
     >
       {/* container part */}
       <motion.div
@@ -24,7 +27,7 @@ function section3() {
         className="container mx-auto h-full w-full py-24 px-8"
       >
         {/*       left side title img */}
-        <div className="w-full h-full top-0 flex flex-col xl:flex-row xl:justify-between xl:items-end justify-center items-center">
+        <div className="w-full h-full top-0 flex flex-col xl:flex-row xl:justify-start xl:items-end justify-center items-center border-2">
           <motion.div
             variants={fadeIn('right', 'tween', 0.1, 0.5)}
             className="hidden xl:block  flex-initial lg:order-1"
@@ -37,7 +40,7 @@ function section3() {
               className="w-[0%] xl:w-[80%] 2xl:w-[100%]"
             />
           </motion.div>
-          <div className="block xl:hidden  flex-initial lg:order-1 mt-[100px]">
+          <div className="block xl:hidden  flex-initial lg:order-first mt-[100px]">
             <Image
               src={section3_Origin2}
               alt=""
@@ -49,40 +52,64 @@ function section3() {
 
           <motion.div
             variants={fadeIn('up', 'tween', 0.1, 0.5)}
-            className=" text-white flex-1 xl:order-2 order-3 p-8"
+            className=" text-white order-last p-8 w-full xl:w-1/2 border-2"
           >
-            <h3 className="font-bold text-lg md:text-2xl xl:text-4xl mb-6 leading-10 font-syncopate">
-              THE LEGEND OF IIIMASONS
-            </h3>
-            <p className="font-thin xl:text-lg md:text-md sm:text-sm text-xs text-justify font-raleway">
-              Behind the facade of Web3 lies a digital wild west where desires
-              have been ruthlessly bred, and the greedy seek to manipulate and
-              abuse the technology.Under a full moon, a pack of wolves moves
-              forward in the wilderness, amidst the swirling dust of greed and
-              fear. We are 3MASONS, ambitious, determined and fearless like the
-              wolf. We are a cohort of Web3 warriors who never back down.We
-              stand united in our quest to build a new digital civilisation on
-              the Web3 frontier. We are on a mission to create a promised land
-              in the Web3 world, where technology serves the greater good and
-              empowers mankind.
-            </p>
+            <div className="flex flex-row w-full h-full justify-center items-center">
+              <div className="border-2 m-2 p-2">
+                <button
+                  onClick={() => {
+                    if (activeSlide === 'slide-1') {
+                      console.log(`This is the first :${activeSlide}`);
+                    } else {
+                      setActiveSlide('slide-3');
+                      console.log(activeSlide);
+                    }
+                  }}
+                >
+                  <FaChevronLeft size={40} />
+                </button>
+              </div>
+              <div>
+                <h3 className="font-bold text-lg md:text-2xl xl:text-4xl mb-6 leading-10 font-syncopate">
+                  THE LEGEND OF IIIMASONS
+                </h3>
+                <p className="font-thin xl:text-lg md:text-md sm:text-sm text-xs text-justify font-raleway">
+                  Behind the facade of Web3 lies a digital wild west where
+                  desires have been ruthlessly bred, and the greedy seek to
+                  manipulate and abuse the technology.Under a full moon, a pack
+                  of wolves moves forward in the wilderness, amidst the swirling
+                  dust of greed and fear. We are 3MASONS, ambitious, determined
+                  and fearless like the wolf. We are a cohort of Web3 warriors
+                  who never back down.We stand united in our quest to build a
+                  new digital civilisation on the Web3 frontier. We are on a
+                  mission to create a promised land in the Web3 world, where
+                  technology serves the greater good and empowers mankind.
+                </p>
+              </div>
+              <div className="border-2 m-2 p-2">
+                <button>
+                  <FaChevronRight size={40} />
+                </button>
+              </div>
+            </div>
           </motion.div>
 
           <motion.div
             variants={fadeIn('left', 'tween', 0.1, 0.5)}
-            className=" flex-initial xl:order-3 order-2"
+            className="absolute -z-10 right-0 bottom-0"
           >
             <Image
-              src={section3_cat}
+              src={bg_section3_01}
               alt=""
-              unoptimized
               quality={100}
-              className="w-[250px] md:w-[450px] lg:w-[450px] xl:w-[700px]"
+              className=" h-auto w-screen"
+              priority
             />
           </motion.div>
-        </div>{' '}
+        </div>
         {/* end of left side title img */}
-      </motion.div>{' '}
+      </motion.div>
+
       {/*  end of the container part */}
     </section>
   );
