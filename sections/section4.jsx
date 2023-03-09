@@ -3,9 +3,16 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import bg_section4 from '../assets/section4/bg_section4.png';
-import section3_group from '../assets/section4/section3_group.png';
+
 import group_01 from '../assets/section4/group_01.png';
-import group_black from '../assets/section4/group_black.png';
+import group_02 from '../assets/section4/group_02.png';
+import group_03 from '../assets/section4/group_03.png';
+import group_04 from '../assets/section4/group_04.png';
+import group_05 from '../assets/section4/group_05.png';
+import group_06 from '../assets/section4/group_06.png';
+import group_07 from '../assets/section4/group_07.png';
+import group_08 from '../assets/section4/group_08.png';
+import group_09 from '../assets/section4/group_09.png';
 import section3_title from '../assets/section4/section3_title.png';
 import section3_text from '../assets/section4/section3_text.png';
 
@@ -42,7 +49,7 @@ function section4() {
                 whileHover={{ opacity: 0 }}
               >
                 <Image
-                  src={group_black}
+                  src={group_02}
                   alt=""
                   unoptimized
                   quality={100}
@@ -55,7 +62,7 @@ function section4() {
                 whileHover={{ opacity: 0 }}
               >
                 <Image
-                  src={group_01}
+                  src={group_03}
                   alt=""
                   unoptimized
                   quality={100}
@@ -68,7 +75,7 @@ function section4() {
                 whileHover={{ opacity: 0 }}
               >
                 <Image
-                  src={group_black}
+                  src={group_04}
                   alt=""
                   unoptimized
                   quality={100}
@@ -81,7 +88,7 @@ function section4() {
                 whileHover={{ opacity: 0 }}
               >
                 <Image
-                  src={group_01}
+                  src={group_05}
                   alt=""
                   unoptimized
                   quality={100}
@@ -95,7 +102,7 @@ function section4() {
                 whileHover={{ opacity: 0 }}
               >
                 <Image
-                  src={group_01}
+                  src={group_06}
                   alt=""
                   unoptimized
                   quality={100}
@@ -110,7 +117,7 @@ function section4() {
                 whileHover={{ opacity: 0 }}
               >
                 <Image
-                  src={group_black}
+                  src={group_07}
                   alt=""
                   unoptimized
                   quality={100}
@@ -125,7 +132,7 @@ function section4() {
                 whileHover={{ opacity: 0 }}
               >
                 <Image
-                  src={group_01}
+                  src={group_08}
                   alt=""
                   unoptimized
                   quality={100}
@@ -142,7 +149,7 @@ function section4() {
                 whileHover={{ opacity: 0 }}
               >
                 <Image
-                  src={group_01}
+                  src={group_09}
                   alt=""
                   unoptimized
                   quality={100}

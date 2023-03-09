@@ -33,7 +33,7 @@ function section3() {
               alt=""
               unoptimized
               quality={70}
-              className="w-[212px] md:w-[325px] 2xl:w-[649px]"
+              className="w-[212px] md:w-[325px] lg:w-[649px]"
             />
           </div>
 
