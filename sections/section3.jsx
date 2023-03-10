@@ -24,7 +24,7 @@ function section3() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="container mx-auto h-full w-full py-24 px-8"
+        className="container mx-auto h-full w-full py-24 px-8 overflow-hidden"
       >
         {/*       left side title img */}
         <div className="w-full h-full top-0 flex flex-col xl:flex-row xl:justify-start xl:items-end justify-center items-center border-2">
@@ -40,7 +40,7 @@ function section3() {
               className="w-[0%] xl:w-[80%] 2xl:w-[100%]"
             />
           </motion.div>
-          <div className="block xl:hidden  flex-initial lg:order-first ">
+          <div className="block xl:hidden  flex-initial lg:order-first pb-8">
             <Image
               src={section3_Origin2}
               alt=""
@@ -73,7 +73,7 @@ function section3() {
                 <h3 className="text-center xl:text-left font-bold text-lg md:text-2xl xl:text-4xl mb-2 lg:mb-6 leading-6 md:leading-10 font-syncopate">
                   THE LEGEND OF IIIMASONS
                 </h3>
-                <p className="font-thin xl:text-lg md:text-md sm:text-sm text-xs text-justify font-raleway">
+                <p className="font-thin text-sm lg:text-lg md:text-md sm:text-md text-justify font-raleway">
                   Behind the facade of Web3 lies a digital wild west where
                   desires have been ruthlessly bred, and the greedy seek to
                   manipulate and abuse the technology.Under a full moon, a pack
