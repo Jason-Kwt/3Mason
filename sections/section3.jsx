@@ -1,10 +1,9 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../utils/motion';
-import bg_section3 from '../assets/section3/bg_section3.png';
-import bg_section3_01 from '../assets/section3/bg_section3_01.png';
+
 import section3_Origin from '../assets/section3/section3_Origin.png';
 import section3_Origin2 from '../assets/section3/section3_Origin2.png';
 import { exploreSlide } from '@/constants';
@@ -31,6 +30,8 @@ function section3() {
       console.log(`The next number is: ${slideNumber}`);
     }
   };
+
+  useEffect(() => {}, [slideNumber]);
 
   return (
     <section
@@ -106,7 +107,7 @@ function section3() {
             width="1920"
             height="1080"
             alt=""
-            quality={100}
+            quality={70}
             className=" h-auto w-screen overflow-hidden"
             priority
           />

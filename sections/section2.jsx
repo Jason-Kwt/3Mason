@@ -21,8 +21,7 @@ function section2() {
             <Image
               src={section2_Lodge}
               alt=""
-              unoptimized
-              quality={100}
+              quality={70}
               className="w-[50%] lg:w-[70%] xl:w-[100%]"
             />
           </div>
