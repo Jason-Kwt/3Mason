@@ -16,3 +16,7 @@
     height: -webkit-fill-available;
   }
 } */
+
+.css-fix {
+  white-space: pre-wrap; /* or pre-line */
+}

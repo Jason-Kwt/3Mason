@@ -6,9 +6,9 @@ import Section4 from '@/sections/section4';
 export default function Home() {
   return (
     <main className="overflow-hidden h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
-      <Section3 />
       <Section1 />
       <Section2 />
+      <Section3 />
       <Section4 />
     </main>
   );

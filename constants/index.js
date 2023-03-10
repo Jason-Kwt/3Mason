@@ -33,16 +33,53 @@ export const exploreNFTs = [
 
 export const exploreSlide = [
   {
+    id: 'slide-0',
+    imgUrl: '/slide00.png',
+    title: 'The ORIGIN of IIImasons',
+    text: `Behind the facade of Web3 lies a digital wild west where desires have been ruthlessly bred, and the greedy seek to manipulate and abuse the technology.    
+
+    Under a full moon, a pack of wolves moves forward in the wilderness, amidst the swirling dust of greed and fear. We are 3MASONS, ambitious, determined and fearless like the wolf. We are a cohort of Web3 warriors who never back down. 
+    
+    We stand united in our quest to build a new digital civilisation on the Web3 frontier. We are on a mission to create a promised land in the Web3 world, where technology serves the greater good and empowers mankind.`,
+  },
+  {
     id: 'slide-1',
     imgUrl: '/slide01.png',
     title: 'Indomitable Will',
-    text: 'Who is Satoshi Nakamoto? Underneath the mask, we all are. It is not a person, but a spirit that bullets cannot kill. This spirit marks the beginning of the 3MASON story. Ever since we first read the Bitcoin white paper, we knew we were destined to be immune to harm from bullets and swords',
+    text: `Who is Satoshi Nakamoto? 
+    Underneath the mask, we all are.
+    
+    It is not a person, but a spirit that bullets cannot kill. This spirit marks the beginning of the 3MASON story. Ever since we first read the Bitcoin white paper, we knew we were destined to be immune to harm from bullets and swords`,
+  },
+  {
+    id: 'slide-2',
+    imgUrl: '/slide02.png',
+    title: 'Bitcoin or Pizza',
+    text: `A miner carrying a heavy bag of 10,000 Bitcoins slips and drops his bag into a lake. Heartbroken, he watches as a fairy appears and presents two options - a bag of Bitcoin or gold and silver pizzas - both retrieved from the water. Without hesitation, he chooses the bag of Bitcoin over the pizzas.
+    
+    This simple trade has become a legend in Bitcoin's history, a symbol of cryptocurrency's immense value and potential.`,
   },
   {
     id: 'slide-3',
     imgUrl: '/slide03.png',
     title: 'X Thunder',
     text: 'In the world of Web3, SBF was once revered as a god. However, he betrayed the trust of the people and caused a thunderstorm that left the Web3 community in chaos. Amidst the turmoil, a hero of Web3 emerged, catching the thunder in his hands and hurling it back at Zeus, defeating him.',
+  },
+  {
+    id: 'slide-4',
+    imgUrl: '/slide04.png',
+    title: 'Pied Piper E',
+    text: `The Pied Piper, Elon, used his magic flute to control dogs, leading them to their deaths. However, an earless wolf appeared in the pack and bit off the ears of the other dogs, breaking the spell and freeing them from the control of the piper. The liberated dogs regained their sanity and broke away from the pack, each finding their own path.`,
+  },
+  {
+    id: 'slide-5',
+    imgUrl: '/slide05.png',
+    title: `The Philosopher's Stone`,
+    text: `The Philosopher's Stone is the ultimate goal of all alchemists, representing the pinnacle of their craft.
+    
+    Believing that the Philosopher's Stone was made up of countless "∑", Alchemist V spent countless hours attempting to combine them to create the legendary stone. Despite his best efforts, all of his experiments were in vain.
+    
+    In a last-ditch effort, he sought the help of others, including magicians, craftsmen and painters. Together, they worked tirelessly, combining their unique skills and knowledge to create the Philosopher's Stone eventually.`,
   },
 ];
 

@@ -11,7 +11,26 @@ import { exploreSlide } from '@/constants';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 function section3() {
-  const [activeSlide, setActiveSlide] = useState('slide-1');
+  const [slideNumber, setSlideNumber] = useState(0);
+
+  const handleSlideLeft = () => {
+    if (slideNumber === 0) {
+      console.log(`This is the first one + ${slideNumber}`);
+      setSlideNumber(exploreSlide.length - 1);
+    } else {
+      setSlideNumber(slideNumber - 1);
+      console.log(`The next number is: ${slideNumber}`);
+    }
+  };
+  const handleSlideRight = () => {
+    if (slideNumber === exploreSlide.length - 1) {
+      console.log(`This is the last one + ${slideNumber}`);
+      setSlideNumber(0);
+    } else {
+      setSlideNumber(slideNumber + 1);
+      console.log(`The next number is: ${slideNumber}`);
+    }
+  };
 
   return (
     <section
@@ -27,7 +46,7 @@ function section3() {
         className="container mx-auto h-full w-full py-24 px-8 overflow-hidden"
       >
         {/*       left side title img */}
-        <div className="w-full h-full top-0 flex flex-col xl:flex-row xl:justify-start xl:items-end justify-center items-center border-2">
+        <div className="w-full h-full top-0 flex flex-col xl:flex-row xl:justify-start xl:items-end justify-start items-center">
           <motion.div
             variants={fadeIn('right', 'tween', 0.1, 0.5)}
             className="hidden xl:block  flex-initial lg:order-1"
@@ -35,16 +54,15 @@ function section3() {
             <Image
               src={section3_Origin}
               alt=""
-              unoptimized
+              priority
               quality={70}
               className="w-[0%] xl:w-[80%] 2xl:w-[100%]"
             />
           </motion.div>
-          <div className="block xl:hidden  flex-initial lg:order-first pb-8">
+          <div className="block xl:hidden  flex-initial lg:order-first py-4">
             <Image
               src={section3_Origin2}
               alt=""
-              unoptimized
               quality={70}
               className="w-[212px] md:w-[325px] lg:w-[500px]"
             />
@@ -52,43 +70,26 @@ function section3() {
 
           <motion.div
             variants={fadeIn('up', 'tween', 0.1, 0.5)}
-            className=" text-white order-last md:p-8 w-full xl:w-1/2 border-2"
+            className=" text-white order-last md:p-8 w-full xl:w-1/2 h-4/6"
           >
-            <div className="flex flex-row w-full h-full justify-center items-center">
-              <div className="border-2  md:m-2 md:p-2">
-                <button
-                  onClick={() => {
-                    if (activeSlide === 'slide-1') {
-                      console.log(`This is the first :${activeSlide}`);
-                    } else {
-                      setActiveSlide('slide-3');
-                      console.log(activeSlide);
-                    }
-                  }}
-                >
-                  <FaChevronLeft size={40} />
+            <div className=" flex flex-row w-full h-full justify-center items-center">
+              <div className="  md:m-2 md:p-2">
+                <button onClick={handleSlideLeft}>
+                  <FaChevronLeft className="w-[25px] h-[25px] lg:w-[40px] lg:h-[40px] text-gray-600" />
                 </button>
               </div>
               <div>
                 <h3 className="text-center xl:text-left font-bold text-lg md:text-2xl xl:text-4xl mb-2 lg:mb-6 leading-6 md:leading-10 font-syncopate">
-                  THE LEGEND OF IIIMASONS
+                  {exploreSlide[slideNumber].title}
                 </h3>
-                <p className="font-thin text-sm lg:text-lg md:text-md sm:text-md text-justify font-raleway">
-                  Behind the facade of Web3 lies a digital wild west where
-                  desires have been ruthlessly bred, and the greedy seek to
-                  manipulate and abuse the technology.Under a full moon, a pack
-                  of wolves moves forward in the wilderness, amidst the swirling
-                  dust of greed and fear. We are 3MASONS, ambitious, determined
-                  and fearless like the wolf. We are a cohort of Web3 warriors
-                  who never back down.We stand united in our quest to build a
-                  new digital civilisation on the Web3 frontier. We are on a
-                  mission to create a promised land in the Web3 world, where
-                  technology serves the greater good and empowers mankind.
+
+                <p className="font-thin text-sm lg:text-base text-justify font-raleway whitespace-pre-line leading-tight">
+                  {exploreSlide[slideNumber].text}
                 </p>
               </div>
-              <div className="border-2 md:m-2 md:p-2">
-                <button>
-                  <FaChevronRight size={40} />
+              <div className=" md:m-2 md:p-2">
+                <button onClick={handleSlideRight}>
+                  <FaChevronRight className="w-[25px] h-[25px] lg:w-[40px] lg:h-[40px] text-gray-600" />
                 </button>
               </div>
             </div>
@@ -100,7 +101,10 @@ function section3() {
           className="absolute -z-10 right-0 bottom-0"
         >
           <Image
-            src={bg_section3_01}
+            // src={bg_section3_01}
+            src={exploreSlide[slideNumber].imgUrl}
+            width="1920"
+            height="1080"
             alt=""
             quality={100}
             className=" h-auto w-screen overflow-hidden"
