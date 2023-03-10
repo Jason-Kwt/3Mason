@@ -21,7 +21,7 @@ function section4() {
   return (
     <section
       id="section4"
-      className="h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat"
+      className="h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{ backgroundImage: `url(${bg_section4.src})` }}
     >
       {/* container part */}

@@ -16,7 +16,7 @@ function section3() {
   return (
     <section
       id="section3"
-      className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat relative"
+      className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat relative overflow-hidden"
     >
       {/* container part */}
       <motion.div
@@ -40,7 +40,7 @@ function section3() {
               className="w-[0%] xl:w-[80%] 2xl:w-[100%]"
             />
           </motion.div>
-          <div className="block xl:hidden  flex-initial lg:order-first mt-[100px]">
+          <div className="block xl:hidden  flex-initial lg:order-first ">
             <Image
               src={section3_Origin2}
               alt=""
@@ -52,10 +52,10 @@ function section3() {
 
           <motion.div
             variants={fadeIn('up', 'tween', 0.1, 0.5)}
-            className=" text-white order-last p-8 w-full xl:w-1/2 border-2"
+            className=" text-white order-last md:p-8 w-full xl:w-1/2 border-2"
           >
             <div className="flex flex-row w-full h-full justify-center items-center">
-              <div className="border-2 m-2 p-2">
+              <div className="border-2  md:m-2 md:p-2">
                 <button
                   onClick={() => {
                     if (activeSlide === 'slide-1') {
@@ -70,7 +70,7 @@ function section3() {
                 </button>
               </div>
               <div>
-                <h3 className="font-bold text-lg md:text-2xl xl:text-4xl mb-6 leading-10 font-syncopate">
+                <h3 className="text-center xl:text-left font-bold text-lg md:text-2xl xl:text-4xl mb-2 lg:mb-6 leading-6 md:leading-10 font-syncopate">
                   THE LEGEND OF IIIMASONS
                 </h3>
                 <p className="font-thin xl:text-lg md:text-md sm:text-sm text-xs text-justify font-raleway">
@@ -86,28 +86,27 @@ function section3() {
                   technology serves the greater good and empowers mankind.
                 </p>
               </div>
-              <div className="border-2 m-2 p-2">
+              <div className="border-2 md:m-2 md:p-2">
                 <button>
                   <FaChevronRight size={40} />
                 </button>
               </div>
             </div>
           </motion.div>
-
-          <motion.div
-            variants={fadeIn('left', 'tween', 0.1, 0.5)}
-            className="absolute -z-10 right-0 bottom-0"
-          >
-            <Image
-              src={bg_section3_01}
-              alt=""
-              quality={100}
-              className=" h-auto w-screen"
-              priority
-            />
-          </motion.div>
         </div>
         {/* end of left side title img */}
+        <motion.div
+          variants={fadeIn('left', 'tween', 0.1, 0.5)}
+          className="absolute -z-10 right-0 bottom-0"
+        >
+          <Image
+            src={bg_section3_01}
+            alt=""
+            quality={100}
+            className=" h-auto w-screen overflow-hidden"
+            priority
+          />
+        </motion.div>
       </motion.div>
 
       {/*  end of the container part */}

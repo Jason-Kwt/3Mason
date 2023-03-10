@@ -8,7 +8,7 @@ function section2() {
   return (
     <section
       id="section2"
-      className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat"
+      className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat overflow-hidden"
     >
       {/* container part */}
       <div className="container mx-auto h-full w-full py-24 px-8">

@@ -20,7 +20,7 @@ function section1() {
           <div className="text-white text-center">
             <motion.h1
               variants={textVariant(0.2)}
-              className="2xl:text-9xl xl:text-8xl  lg:text-6xl md:text-5xl text-3xl tracking-[0.1em] font-black font-syncopate"
+              className="2xl:text-9xl xl:text-8xl  lg:text-6xl md:text-5xl text-2xl tracking-[0.1em] font-black font-syncopate"
             >
               I I I M A S O N S
             </motion.h1>

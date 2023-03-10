@@ -11,7 +11,7 @@ function section6() {
   return (
     <section
       id="section6"
-      className="h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat bg-section6"
+      className="h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat bg-section6 overflow-hidden"
     >
       <motion.div
         variants={staggerContainer}

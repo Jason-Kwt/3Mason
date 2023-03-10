@@ -17,7 +17,7 @@ function section9() {
   return (
     <section
       id="section9"
-      className="h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat"
+      className="h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat overflow-hidden"
     >
       {/* container part */}
       <motion.div

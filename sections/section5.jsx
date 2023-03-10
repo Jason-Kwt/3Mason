@@ -12,7 +12,7 @@ function section5() {
   return (
     <section
       id="section5"
-      className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat relative bg-section5_2 lg:bg-section5"
+      className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat relative bg-section5_2 lg:bg-section5 overflow-hidden"
     >
       {/* container part */}
       <motion.div
