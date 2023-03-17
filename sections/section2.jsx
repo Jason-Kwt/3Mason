@@ -8,22 +8,19 @@ function section2() {
   return (
     <section
       id="section2"
-      className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat overflow-hidden"
+      className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat overflow-hidden bg-white"
     >
       {/* container part */}
-      <div className="container mx-auto h-full w-full py-24 px-8">
+      <div className="container mx-auto h-full w-full py-24 px-8 border-2">
         {/*       left side title img */}
-        <div className="w-full h-full flex flex-col justify-end items-start">
-          <div className="text-left text-white">
-            <p className="mb-8 tracking-[0.2em] font-bold text-lg md:text-2xl xl:text-4xl ">
-              WELCOME TO
+        <div className="w-full h-full flex flex-col justify-end items-center content-center border-2">
+          <div className="text-center  text-black ">
+            <p className=" tracking-[0.5em] font-bold  text-xl ">
+              UNLOCK IIIMASONS
             </p>
-            <Image
-              src={section2_Lodge}
-              alt=""
-              quality={70}
-              className="w-[50%] lg:w-[70%] xl:w-[100%]"
-            />
+            <h2 className="text-right tracking-[5rem] -mr-[5rem] font-bold text-2xl md:text-4xl xl:text-[350px] leading-none">
+              LODGE
+            </h2>
           </div>
         </div>{' '}
         {/* end of left side title img */}

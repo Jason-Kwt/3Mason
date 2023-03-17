@@ -11,7 +11,7 @@ function section6() {
   return (
     <section
       id="section6"
-      className="h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat bg-section6 overflow-hidden"
+      className="h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat overflow-hidden bg-white"
     >
       <motion.div
         variants={staggerContainer}
@@ -20,29 +20,13 @@ function section6() {
         viewport={{ once: false, amount: 0.25 }}
       >
         <div className="absolute w-full h-screen top-0 flex flex-col p-4 justify-center items-center">
-          <Image
-            src={section6_polygon}
-            alt=""
-            unoptimized
-            quality={70}
-            className="absolute m-16 p-20"
-          />
-          <div className="text-white text-center p-8">
-            <motion.div
-              variants={textVariant(0.2)}
-              className="lg:text-9xl md:text-7xl text-3xl tracking-[0.1em] font-black"
-            >
-              <Image
-                src={section6_title}
-                alt=""
-                unoptimized
-                quality={70}
-                className="w-[600px] md:w-[800px] lg:w-[1280px]"
-              />
-            </motion.div>
+          <div className="text-black text-center p-8">
+            <p className="font-base text-lg tracking-[0.3em] my-8">
+              THE IIIMASONS VALUES
+            </p>
             <motion.h2
               variants={textVariant(0.5)}
-              className="mt-8 lg:mt-16 text-white font-thin lg:text-2xl tracking-widest leading-loose"
+              className=" font-black text-4xl tracking-[0.5em] leading-loose"
             >
               <p>TENACITY</p>
               <p>AUDACITY</p>

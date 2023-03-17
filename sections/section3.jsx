@@ -47,8 +47,8 @@ function section3() {
         className="container mx-auto h-full w-full py-24 px-8 overflow-hidden"
       >
         {/*       left side title img */}
-        <div className="w-full h-full top-0 flex flex-col xl:flex-row xl:justify-start xl:items-end justify-start items-center">
-          <motion.div
+        <div className="w-full h-full top-0 flex flex-col xl:flex-row xl:justify-start xl:items-end justify-start items-center border-2">
+          {/* <motion.div
             variants={fadeIn('right', 'tween', 0.1, 0.5)}
             className="hidden xl:block  flex-initial lg:order-1"
           >
@@ -67,7 +67,7 @@ function section3() {
               quality={70}
               className="w-[212px] md:w-[325px] lg:w-[500px]"
             />
-          </div>
+          </div> */}
 
           <motion.div
             variants={fadeIn('up', 'tween', 0.1, 0.5)}

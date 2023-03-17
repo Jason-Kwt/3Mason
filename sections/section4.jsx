@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { fadeIn, staggerContainer } from '../utils/motion';
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 import bg_section4 from '../assets/section4/bg_section4.png';
 
 import group_01 from '../assets/section4/group_01.png';
@@ -21,8 +21,8 @@ function section4() {
   return (
     <section
       id="section4"
-      className="h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat overflow-hidden"
-      style={{ backgroundImage: `url(${bg_section4.src})` }}
+      className="h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat overflow-hidden relative"
+      //style={{ backgroundImage: `url(${bg_section4.src})` }}
     >
       {/* container part */}
       <motion.div
@@ -30,13 +30,29 @@ function section4() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="container mx-auto h-full w-full pt-24 pb-16 px-8"
+        className="container mx-auto h-full w-full pt-24 pb-16 px-8 border-2"
       >
         {/*       left side title img */}
-        <div className=" w-full h-full top-0 flex flex-col xl:flex-row xl:justify-center xl:items-center justify-center items-center gap-2">
+        <div className=" w-full h-full top-0 flex flex-col justify-center items-center gap-2 border-2">
+          <div className="text-black text-center">
+            <motion.h1
+              variants={textVariant(0.2)}
+              className="2xl:text-5xl xl:text-4xl  lg:text-3xl md:text-xl text-2xl tracking-[0.1em] font-black font-syncopate"
+            >
+              THE IIIMASONS PRINCIPLES
+            </motion.h1>
+            <hr className="w-24 h-px mx-auto  border-0 bg-gray-700 my-8 rounded "></hr>
+            <motion.p
+              variants={textVariant(0.5)}
+              className="md:text-lg text-base tracking-[0.1em] font-thin font-syncopate"
+            >
+              Unlock IIImasons
+            </motion.p>
+          </div>
+
           <motion.div
             variants={fadeIn('right', 'tween', 0.1, 0.5)}
-            className=" w-[360px] md:w-[510px] lg:w-[510px] xl:w-[850px] h-[350px] md:h-[550px] order-first mt-16 grid grid-rows-3 justify-center justify-items-center items-center content-center relative"
+            className=" w-[360px] md:w-[510px] lg:w-[510px] xl:w-[700px] h-[350px] md:h-[550px] mt-16 grid grid-rows-3 justify-center justify-items-center items-center content-center relative"
           >
             <div className="h-full w-full">
               {/* ROW 1 */}
@@ -48,8 +64,6 @@ function section4() {
                 <Image
                   src={group_01}
                   alt=""
-                  unoptimized
-                  quality={100}
                   className="w-[100px] md:w-[150px] xl:w-[180px] absolute left-0 top-0"
                 />
               </motion.div>
@@ -61,8 +75,6 @@ function section4() {
                 <Image
                   src={group_02}
                   alt=""
-                  unoptimized
-                  quality={100}
                   className="w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[4rem] md:left-[5.5rem] xl:left-[7rem]"
                 />
               </motion.div>
@@ -74,8 +86,6 @@ function section4() {
                 <Image
                   src={group_03}
                   alt=""
-                  unoptimized
-                  quality={100}
                   className="w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[8rem] md:left-[11rem] xl:left-[14rem]"
                 />
               </motion.div>
@@ -87,8 +97,6 @@ function section4() {
                 <Image
                   src={group_04}
                   alt=""
-                  unoptimized
-                  quality={100}
                   className="w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[12rem] md:left-[16.5rem] xl:left-[21rem]"
                 />
               </motion.div>
@@ -100,8 +108,6 @@ function section4() {
                 <Image
                   src={group_05}
                   alt=""
-                  unoptimized
-                  quality={100}
                   className="w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[16rem] md:left-[22rem] xl:left-[28rem]"
                 />
               </motion.div>
@@ -114,8 +120,6 @@ function section4() {
                 <Image
                   src={group_06}
                   alt=""
-                  unoptimized
-                  quality={100}
                   className="w-[100px] md:w-[150px] xl:w-[180px] absolute 
                   top-[6rem] md:top-[9rem] xl:top-[11rem] 
                   left-[4rem] md:left-[5.5rem] xl:left-[6rem]"
@@ -129,8 +133,6 @@ function section4() {
                 <Image
                   src={group_07}
                   alt=""
-                  unoptimized
-                  quality={100}
                   className="w-[100px] md:w-[150px] xl:w-[180px] absolute 
                   top-[6rem] md:top-[9rem] xl:top-[11rem] 
                   left-[8rem] md:left-[11rem] xl:left-[14rem]"
@@ -144,8 +146,6 @@ function section4() {
                 <Image
                   src={group_08}
                   alt=""
-                  unoptimized
-                  quality={100}
                   className="w-[100px] md:w-[150px] xl:w-[180px] absolute 
                   top-[6rem] md:top-[9rem] xl:top-[11rem] 
                   left-[12rem] md:left-[16.5rem] xl:left-[22rem]"
@@ -161,8 +161,6 @@ function section4() {
                 <Image
                   src={group_09}
                   alt=""
-                  unoptimized
-                  quality={100}
                   className="w-[100px] md:w-[150px] xl:w-[180px] absolute 
                   top-[12rem] md:top-[18rem] xl:top-[22rem] 
                   left-[8rem] md:left-[11rem] xl:left-[14rem]"
@@ -171,7 +169,7 @@ function section4() {
             </div>
           </motion.div>
 
-          <motion.div
+          {/*           <motion.div
             variants={fadeIn('left', 'tween', 0.1, 0.5)}
             className="flex flex-col gap-4"
           >
@@ -193,11 +191,12 @@ function section4() {
                 className="object-cover w-[325px] lg:w-[325px] xl:w-[970px]"
               />
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>{' '}
         {/* end of left side title img */}
       </motion.div>{' '}
       {/*  end of the container part */}
+      <div className="w-screen h-[90%] bg-white -z-20 absolute inset-x-0 bottom-0 rounded-t-[4rem] absolute"></div>
     </section>
   );
 }

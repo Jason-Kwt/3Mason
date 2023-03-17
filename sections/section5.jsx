@@ -22,56 +22,33 @@ function section5() {
         className="container mx-auto h-full w-full py-24 px-8"
       >
         {/*       left side title img */}
-        <div className="w-full h-full top-0 flex flex-col xl:flex-row  sm:justify-start md:justify-around xl:justify-between xl:items-end items-center">
-          <motion.div
-            variants={fadeIn('right', 'tween', 0.2, 1)}
-            className="hidden xl:block  flex-initial lg:order-1"
-          >
-            <Image
-              src={section5_title}
-              alt=""
-              unoptimized
-              quality={70}
-              className="w-[0%] xl:w-[80%] 2xl:w-[90%]"
-            />
-          </motion.div>
-          <div className="block xl:hidden  flex-initial lg:order-1 mt-[100px]">
-            <Image
-              src={section5_title2}
-              alt=""
-              unoptimized
-              quality={70}
-              className="w-[212px] md:w-[425px] lg:w-[549px]"
-            />
-          </div>
-
+        <div className="w-full h-full top-0 flex flex-col xl:flex-row  sm:justify-start md:justify-around xl:justify-between  items-center border-2">
           <motion.div
             variants={fadeIn('left', 'tween', 0.2, 1)}
-            className="relative text-justify text-white w-full xl:w-2/5 p-8 xl:order-2 order-3"
+            className="relative text-justify text-white w-full xl:w-3/6 p-8 "
           >
-            <p className="font-thin text-sm lg:text-lg md:text-md sm:text-md">
-              I, as a 3MASON, pledge to apply my best expertise and enthusiasm
+            <h1 className="2xl:text-4xl   lg:text-3xl md:text-3xl text-2xl tracking-[0.1em] font-black font-syncopate">
+              THE IIIMASONS OATH
+            </h1>
+            <p className="mt-8 font-thin text-base font-raleway">
+              I, as a IIIMASON, pledge to apply my best expertise and enthusiasm
               towards improving the Web3 ecosystem and to consistently act with
               accountability and integrity in all my endeavours.
               <br></br>
-              <br></br>I acknowledge the trust invested in 3MASON and pledge to
-              uphold the utmost ethical and responsible conduct. I am devoted to
-              the development and success of 3MASON and will exert every effort
-              to achieve our shared goals.
+              <br></br>I acknowledge the trust invested in IIIMASON and pledge
+              to uphold the utmost ethical and responsible conduct. I am devoted
+              to the development and success of IIIMASON and will exert every
+              effort to achieve our shared goals.
               <br></br>
               <br></br> By taking this oath, I demonstrate my allegiance and
-              dedication to 3MASON and our mission of creating a better Web3
+              dedication to IIIMASON and our mission of creating a better Web3
               world.
             </p>
 
-            <button>
-              <Image
-                src={section5_button}
-                alt=""
-                unoptimized
-                quality={70}
-                className="w-[0%] xl:w-[80%] 2xl:w-[90%] mt-8"
-              />
+            <button className="mt-8 bg-white px-[9rem] py-1 rounded-lg">
+              <p className="text-cent text-black font-bold text-sm tracking-[0.2em]">
+                BECOME A IIIMASON
+              </p>
             </button>
           </motion.div>
         </div>{' '}

@@ -33,19 +33,14 @@ function Navbar() {
       {/* Navbar */}
       <div className=" container mx-auto flex justify-between items-center pt-2 pb-6 px-4">
         <Link href="/" className="font-semibold transition">
-          <Image
-            src={logo_site}
-            alt="3Masons Logo"
-            quality={70}
-            className="w-[90px]"
-          />
+          <Image src={logo_site} alt="3Masons Logo" className="w-[90px]" />
         </Link>
-        <div className="hidden md:flex gap-8 lg:gap-16 xl:gap-32 text-white pr-8">
+        <div className="hidden md:flex gap-8 lg:gap-16 xl:gap-24 text-white pr-8">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="font-black xl:text-xl text-md transition hover:scale-125 duration-300"
+              className="font-semibold xl:text-xl text-md transition hover:scale-125 duration-300"
             >
               {item.name}
             </Link>
@@ -64,12 +59,7 @@ function Navbar() {
       {isOpenMenu ? (
         <div className="w-screen h-screen top-0 bg-black fixed inset-0  overflow-y-auto z-10 ">
           <div className=" container mx-auto flex justify-between items-center pt-2 pb-6 px-4 pr-8">
-            <Image
-              src={logo_site}
-              alt="3Masons Logo"
-              quality={70}
-              className="w-[90px]"
-            />
+            <Image src={logo_site} alt="3Masons Logo" className="w-[90px]" />
 
             <button
               className="md:hidden text-white text-3xl mr-4"

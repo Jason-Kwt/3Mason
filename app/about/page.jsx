@@ -10,8 +10,8 @@ export const metadata = {
 function aboutPage() {
   return (
     <main className="overflow-hidden h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
-      <Section6 />
       <Section5 />
+      <Section6 />
     </main>
   );
 }
