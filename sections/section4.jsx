@@ -37,11 +37,11 @@ function section4() {
           <div className="text-black text-center">
             <motion.h1
               variants={textVariant(0.2)}
-              className="2xl:text-5xl xl:text-4xl  lg:text-3xl md:text-xl text-2xl tracking-[0.1em] font-black font-syncopate"
+              className="2xl:text-5xl xl:text-4xl  lg:text-3xl md:text-xl text-2xl tracking-[0.1em] font-black font-syncopate my-4"
             >
               THE IIIMASONS PRINCIPLES
             </motion.h1>
-            <hr className="w-24 h-px mx-auto  border-0 bg-gray-700 my-8 rounded "></hr>
+            <hr className="w-24 h-px mx-auto  border-0 bg-gray-700 my-4 rounded "></hr>
             <motion.p
               variants={textVariant(0.5)}
               className="md:text-lg text-base tracking-[0.1em] font-thin font-syncopate"
@@ -52,7 +52,7 @@ function section4() {
 
           <motion.div
             variants={fadeIn('right', 'tween', 0.1, 0.5)}
-            className=" w-[360px] md:w-[510px] lg:w-[510px] xl:w-[700px] h-[350px] md:h-[550px] mt-16 grid grid-rows-3 justify-center justify-items-center items-center content-center relative"
+            className=" w-[360px] md:w-[510px] lg:w-[510px] xl:w-[630px] h-[350px] md:h-[550px] mt-8 grid grid-rows-3 justify-center justify-items-center items-center content-center relative"
           >
             <div className="h-full w-full">
               {/* ROW 1 */}
@@ -196,7 +196,7 @@ function section4() {
         {/* end of left side title img */}
       </motion.div>{' '}
       {/*  end of the container part */}
-      <div className="w-screen h-[90%] bg-white -z-20 absolute inset-x-0 bottom-0 rounded-t-[4rem] absolute"></div>
+      <div className="w-screen h-[80%] md:h-[90%] bg-white -z-20 absolute inset-x-0 bottom-0 rounded-t-[4rem]"></div>
     </section>
   );
 }

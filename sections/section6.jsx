@@ -4,14 +4,14 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { staggerContainer, textVariant } from '../utils/motion';
 
-import section6_title from '../assets/section6/section6_title.png';
-import section6_polygon from '../assets/section6/section6_polygon.png';
+import bg_section6 from '../assets/section6/bg_section6.png';
 
 function section6() {
   return (
     <section
       id="section6"
-      className="h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat overflow-hidden bg-white"
+      className="h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat overflow-hidden"
+      style={{ backgroundImage: `url(${bg_section6.src})` }}
     >
       <motion.div
         variants={staggerContainer}

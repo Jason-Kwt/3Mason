@@ -18,7 +18,7 @@ function aboutPage() {
     <>
       <Navbar
         textColor={section6InView ? 'black' : 'white'}
-        bgColor={section6InView ? 'white' : 'black'}
+        bgColor={section6InView ? 'transparent' : 'transparent'}
       />
       <main className="overflow-hidden h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         <section ref={section5Ref}>

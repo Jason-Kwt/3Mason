@@ -22,7 +22,7 @@ function section5() {
         className="container mx-auto h-full w-full py-24 px-8"
       >
         {/*       left side title img */}
-        <div className="w-full h-full top-0 flex flex-col xl:flex-row  sm:justify-start md:justify-around xl:justify-between  items-center border-2">
+        <div className="w-full h-full top-0 flex flex-col xl:flex-row  sm:justify-start md:justify-around xl:justify-between  items-center ">
           <motion.div
             variants={fadeIn('left', 'tween', 0.2, 1)}
             className="relative text-justify text-white w-full xl:w-3/6 p-8 "

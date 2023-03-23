@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Navbar
         textColor={section2InView ? 'black' : 'white'}
-        bgColor={section2InView ? 'white' : 'black'}
+        bgColor={section2InView ? 'transparent' : 'transparent'}
       />
       <main className="overflow-hidden h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
         <section ref={section1Ref}>
