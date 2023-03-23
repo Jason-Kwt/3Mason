@@ -30,12 +30,11 @@ function Navbar({ textColor, bgColor }) {
       initial="hidden"
       whileInView="show"
       className="w-full top-0 z-10 fixed "
-      style={{ backgroundColor: `${bgColor}` }}
     >
       {/* Navbar */}
       <div
         className="container mx-auto flex justify-between items-center pt-2 pb-6 px-4"
-        style={{ color: `${textColor}` }}
+        style={{ color: `${textColor}`, backgroundColor: `${bgColor}` }}
       >
         <Link href="/" className="font-semibold transition">
           {textColor === 'white' ? (

@@ -8,8 +8,7 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 import NFTCard from '@/components/NFTCard';
 import { exploreNFTs } from '@/constants';
 
-import section3_Origin from '../assets/section3/section3_Origin.png';
-import section3_Origin2 from '../assets/section3/section3_Origin2.png';
+import bg_section7 from '../assets/section7/bg_section7.png';
 
 function section7() {
   const [active, setActive] = useState('nft-1');
@@ -17,7 +16,8 @@ function section7() {
   return (
     <section
       id="section7"
-      className="h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat overflow-hidden"
+      className="h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat overflow-hidden bg-black"
+      style={{ backgroundImage: `url(${bg_section7.src})` }}
     >
       {/* container part */}
       <motion.div
