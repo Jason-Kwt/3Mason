@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${syncopate.variable} ${raleway.variable} font-sans bg-black`}
       >
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
       </body>
     </html>

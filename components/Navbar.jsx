@@ -10,8 +10,9 @@ import { navVariants } from '../utils/motion';
 import { FiMenu } from 'react-icons/fi';
 
 import logo_site from '../assets/logo_site.png';
+import logo_site_02 from '../assets/logo_site_02.png';
 
-function Navbar() {
+function Navbar({ textColor, bgColor }) {
   const navigation = [
     { name: 'HOME', href: '/' },
     { name: 'ABOUT', href: '/about' },
@@ -28,14 +29,22 @@ function Navbar() {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="w-full top-0 z-10 fixed bg-transparent"
+      className="w-full top-0 z-10 fixed "
+      style={{ backgroundColor: `${bgColor}` }}
     >
       {/* Navbar */}
-      <div className=" container mx-auto flex justify-between items-center pt-2 pb-6 px-4">
+      <div
+        className="container mx-auto flex justify-between items-center pt-2 pb-6 px-4"
+        style={{ color: `${textColor}` }}
+      >
         <Link href="/" className="font-semibold transition">
-          <Image src={logo_site} alt="3Masons Logo" className="w-[90px]" />
+          {textColor === 'white' ? (
+            <Image src={logo_site} alt="3Masons Logo" className="w-[90px]" />
+          ) : (
+            <Image src={logo_site_02} alt="3Masons Logo" className="w-[90px]" />
+          )}
         </Link>
-        <div className="hidden md:flex gap-8 lg:gap-16 xl:gap-24 text-white pr-8">
+        <div className="hidden md:flex gap-8 lg:gap-16 xl:gap-24 pr-8 ">
           {navigation.map((item) => (
             <Link
               key={item.name}
