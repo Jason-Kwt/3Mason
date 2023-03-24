@@ -16,11 +16,11 @@ function AboutIndex() {
         bgColor={section6InView ? 'transparent' : 'transparent'}
       />
       <main className="overflow-hidden h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
-        <section ref={section6Ref}>
-          <Section6 />
-        </section>
         <section ref={section5Ref}>
           <Section5 />
+        </section>
+        <section ref={section6Ref}>
+          <Section6 />
         </section>
       </main>
     </>
