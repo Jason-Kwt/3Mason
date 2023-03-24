@@ -19,6 +19,9 @@ export default function HomeIndex() {
         bgColor={section2InView ? 'transparent' : 'transparent'}
       />
       <main className="overflow-hidden h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+        <section ref={section4Ref}>
+          <Section4 />
+        </section>
         <section ref={section1Ref}>
           <Section1 />
         </section>
@@ -27,9 +30,6 @@ export default function HomeIndex() {
         </section>
         <section ref={section3Ref}>
           <Section3 />
-        </section>
-        <section ref={section4Ref}>
-          <Section4 />
         </section>
       </main>
     </>

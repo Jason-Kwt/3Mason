@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
-import bg_section4 from '../assets/section4/bg_section4.png';
 
 import group_01 from '../assets/section4/group_01.png';
 import group_02 from '../assets/section4/group_02.png';
@@ -14,10 +14,38 @@ import group_06 from '../assets/section4/group_06.png';
 import group_07 from '../assets/section4/group_07.png';
 import group_08 from '../assets/section4/group_08.png';
 import group_09 from '../assets/section4/group_09.png';
-import section3_title from '../assets/section4/section3_title.png';
-import section3_text from '../assets/section4/section3_text.png';
 
 function section4() {
+  const [isButton1Hovered, setIsButton1Hovered] = useState(false);
+  const [isButton2Hovered, setIsButton2Hovered] = useState(false);
+  const [isButton3Hovered, setIsButton3Hovered] = useState(false);
+  const [isButton4Hovered, setIsButton4Hovered] = useState(false);
+  const [isButton5Hovered, setIsButton5Hovered] = useState(false);
+  const [isButton6Hovered, setIsButton6Hovered] = useState(false);
+  const [isButton7Hovered, setIsButton7Hovered] = useState(false);
+  const [isButton8Hovered, setIsButton8Hovered] = useState(false);
+  const [isButton9Hovered, setIsButton9Hovered] = useState(false);
+
+  const handleButton1MouseEnter = () => setIsButton1Hovered(true);
+  const handleButton2MouseEnter = () => setIsButton2Hovered(true);
+  const handleButton3MouseEnter = () => setIsButton3Hovered(true);
+  const handleButton4MouseEnter = () => setIsButton4Hovered(true);
+  const handleButton5MouseEnter = () => setIsButton5Hovered(true);
+  const handleButton6MouseEnter = () => setIsButton6Hovered(true);
+  const handleButton7MouseEnter = () => setIsButton7Hovered(true);
+  const handleButton8MouseEnter = () => setIsButton8Hovered(true);
+  const handleButton9MouseEnter = () => setIsButton9Hovered(true);
+
+  const handleButton1MouseLeave = () => setIsButton1Hovered(false);
+  const handleButton2MouseLeave = () => setIsButton2Hovered(false);
+  const handleButton3MouseLeave = () => setIsButton3Hovered(false);
+  const handleButton4MouseLeave = () => setIsButton4Hovered(false);
+  const handleButton5MouseLeave = () => setIsButton5Hovered(false);
+  const handleButton6MouseLeave = () => setIsButton6Hovered(false);
+  const handleButton7MouseLeave = () => setIsButton7Hovered(false);
+  const handleButton8MouseLeave = () => setIsButton8Hovered(false);
+  const handleButton9MouseLeave = () => setIsButton9Hovered(false);
+
   return (
     <section
       id="section4"
@@ -52,146 +80,241 @@ function section4() {
 
           <motion.div
             variants={fadeIn('right', 'tween', 0.1, 0.5)}
-            className=" w-[360px] md:w-[510px] lg:w-[510px] xl:w-[630px] h-[350px] md:h-[550px] mt-8 grid grid-rows-3 justify-center justify-items-center items-center content-center relative"
+            className=" w-[360px] md:w-[510px] lg:w-[510px] xl:w-[630px] h-[350px] md:h-[550px] mt-8 grid grid-rows-3 justify-center justify-items-center items-center content-center relative "
           >
             <div className="h-full w-full">
               {/* ROW 1 */}
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                whileHover={{ opacity: 0 }}
-              >
-                <Image
-                  src={group_01}
-                  alt=""
-                  className="w-[100px] md:w-[150px] xl:w-[180px] absolute left-0 top-0"
-                />
+              <motion.div initial="hidden" whileInView="show">
+                <div className="group">
+                  <Image
+                    src={group_01}
+                    alt=""
+                    className={`w-[100px] md:w-[150px] xl:w-[180px] absolute left-0 top-0 
+                  transform 
+                  hover:scale-[3.5] hover:origin-top-left duration-300
+                  ${
+                    isButton2Hovered ||
+                    isButton3Hovered ||
+                    isButton4Hovered ||
+                    isButton5Hovered ||
+                    isButton6Hovered ||
+                    isButton7Hovered ||
+                    isButton8Hovered ||
+                    isButton9Hovered
+                      ? 'opacity-0'
+                      : 'opacity-100'
+                  }
+                  `}
+                    onMouseEnter={handleButton1MouseEnter}
+                    onMouseLeave={handleButton1MouseLeave}
+                  />
+                </div>
               </motion.div>
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                whileHover={{ opacity: 0 }}
-              >
+              <motion.div initial="hidden" whileInView="show">
                 <Image
                   src={group_02}
                   alt=""
-                  className="w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[4rem] md:left-[5.5rem] xl:left-[7rem]"
+                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[4rem] md:left-[5.5rem] xl:left-[7rem]
+                  transform hover:top-0 hover:left-0 
+                  hover:scale-[3.5] hover:origin-top-left duration-300  
+                  ${
+                    isButton1Hovered ||
+                    isButton3Hovered ||
+                    isButton4Hovered ||
+                    isButton5Hovered ||
+                    isButton6Hovered ||
+                    isButton7Hovered ||
+                    isButton8Hovered ||
+                    isButton9Hovered
+                      ? 'opacity-0'
+                      : 'opacity-100'
+                  }
+                  `}
+                  onMouseEnter={handleButton2MouseEnter}
+                  onMouseLeave={handleButton2MouseLeave}
                 />
               </motion.div>
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                whileHover={{ opacity: 0 }}
-              >
+              <motion.div initial="hidden" whileInView="show">
                 <Image
                   src={group_03}
                   alt=""
-                  className="w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[8rem] md:left-[11rem] xl:left-[14rem]"
+                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[8rem] md:left-[11rem] xl:left-[14rem]
+                  transform hover:top-0 hover:left-0 
+                  hover:scale-[3.5] hover:origin-top-left duration-300
+                  ${
+                    isButton1Hovered ||
+                    isButton2Hovered ||
+                    isButton4Hovered ||
+                    isButton5Hovered ||
+                    isButton6Hovered ||
+                    isButton7Hovered ||
+                    isButton8Hovered ||
+                    isButton9Hovered
+                      ? 'opacity-0'
+                      : 'opacity-100'
+                  }
+                  `}
+                  onMouseEnter={handleButton3MouseEnter}
+                  onMouseLeave={handleButton3MouseLeave}
                 />
               </motion.div>
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                whileHover={{ opacity: 0 }}
-              >
+              <motion.div initial="hidden" whileInView="show">
                 <Image
                   src={group_04}
                   alt=""
-                  className="w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[12rem] md:left-[16.5rem] xl:left-[21rem]"
+                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[12rem] md:left-[16.5rem] xl:left-[21rem]
+                  transform hover:top-0 hover:left-0 
+                  hover:scale-[3.5] hover:origin-top-left duration-300
+                  ${
+                    isButton1Hovered ||
+                    isButton2Hovered ||
+                    isButton3Hovered ||
+                    isButton5Hovered ||
+                    isButton6Hovered ||
+                    isButton7Hovered ||
+                    isButton8Hovered ||
+                    isButton9Hovered
+                      ? 'opacity-0'
+                      : 'opacity-100'
+                  }
+                  `}
+                  onMouseEnter={handleButton4MouseEnter}
+                  onMouseLeave={handleButton4MouseLeave}
                 />
               </motion.div>
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                whileHover={{ opacity: 0 }}
-              >
+              <motion.div initial="hidden" whileInView="show">
                 <Image
                   src={group_05}
                   alt=""
-                  className="w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[16rem] md:left-[22rem] xl:left-[28rem]"
+                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[16rem] md:left-[22rem] xl:left-[28rem]
+                  transform hover:top-0 hover:left-0 
+                  hover:scale-[3.5] hover:origin-top-left duration-300
+                  ${
+                    isButton1Hovered ||
+                    isButton2Hovered ||
+                    isButton3Hovered ||
+                    isButton4Hovered ||
+                    isButton6Hovered ||
+                    isButton7Hovered ||
+                    isButton8Hovered ||
+                    isButton9Hovered
+                      ? 'opacity-0'
+                      : 'opacity-100'
+                  }
+                  `}
+                  onMouseEnter={handleButton5MouseEnter}
+                  onMouseLeave={handleButton5MouseLeave}
                 />
               </motion.div>
               {/* ROW 2 */}
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                whileHover={{ opacity: 0 }}
-              >
+              <motion.div initial="hidden" whileInView="show">
                 <Image
                   src={group_06}
                   alt=""
-                  className="w-[100px] md:w-[150px] xl:w-[180px] absolute 
+                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute 
                   top-[6rem] md:top-[9rem] xl:top-[11rem] 
-                  left-[4rem] md:left-[5.5rem] xl:left-[6rem]"
+                  left-[4rem] md:left-[5.5rem] xl:left-[6rem]
+                  transform hover:top-0 hover:left-0 
+                  hover:scale-[3.5] hover:origin-top-left duration-300
+                  ${
+                    isButton1Hovered ||
+                    isButton2Hovered ||
+                    isButton3Hovered ||
+                    isButton4Hovered ||
+                    isButton5Hovered ||
+                    isButton7Hovered ||
+                    isButton8Hovered ||
+                    isButton9Hovered
+                      ? 'opacity-0'
+                      : 'opacity-100'
+                  }
+                  `}
+                  onMouseEnter={handleButton6MouseEnter}
+                  onMouseLeave={handleButton6MouseLeave}
                 />
               </motion.div>
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                whileHover={{ opacity: 0 }}
-              >
+              <motion.div initial="hidden" whileInView="show">
                 <Image
                   src={group_07}
                   alt=""
-                  className="w-[100px] md:w-[150px] xl:w-[180px] absolute 
+                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute 
                   top-[6rem] md:top-[9rem] xl:top-[11rem] 
-                  left-[8rem] md:left-[11rem] xl:left-[14rem]"
+                  left-[8rem] md:left-[11rem] xl:left-[14rem]
+                  transform hover:top-0 hover:left-0 
+                  hover:scale-[3.5] hover:origin-top-left duration-300
+                  ${
+                    isButton1Hovered ||
+                    isButton2Hovered ||
+                    isButton3Hovered ||
+                    isButton4Hovered ||
+                    isButton5Hovered ||
+                    isButton6Hovered ||
+                    isButton8Hovered ||
+                    isButton9Hovered
+                      ? 'opacity-0'
+                      : 'opacity-100'
+                  }
+                  `}
+                  onMouseEnter={handleButton7MouseEnter}
+                  onMouseLeave={handleButton7MouseLeave}
                 />
               </motion.div>
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                whileHover={{ opacity: 0 }}
-              >
+              <motion.div initial="hidden" whileInView="show">
                 <Image
                   src={group_08}
                   alt=""
-                  className="w-[100px] md:w-[150px] xl:w-[180px] absolute 
+                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute 
                   top-[6rem] md:top-[9rem] xl:top-[11rem] 
-                  left-[12rem] md:left-[16.5rem] xl:left-[22rem]"
+                  left-[12rem] md:left-[16.5rem] xl:left-[22rem]
+                  transform hover:top-0 hover:left-0 
+                  hover:scale-[3.5] hover:origin-top-left duration-300
+                  ${
+                    isButton1Hovered ||
+                    isButton2Hovered ||
+                    isButton3Hovered ||
+                    isButton4Hovered ||
+                    isButton5Hovered ||
+                    isButton6Hovered ||
+                    isButton7Hovered ||
+                    isButton9Hovered
+                      ? 'opacity-0'
+                      : 'opacity-100'
+                  }
+                  `}
+                  onMouseEnter={handleButton8MouseEnter}
+                  onMouseLeave={handleButton8MouseLeave}
                 />
               </motion.div>
               {/* ROW 3 */}
 
-              <motion.div
-                initial="hidden"
-                whileInView="show"
-                whileHover={{ opacity: 0 }}
-              >
+              <motion.div initial="hidden" whileInView="show">
                 <Image
                   src={group_09}
                   alt=""
-                  className="w-[100px] md:w-[150px] xl:w-[180px] absolute 
+                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute 
                   top-[12rem] md:top-[18rem] xl:top-[22rem] 
-                  left-[8rem] md:left-[11rem] xl:left-[14rem]"
+                  left-[8rem] md:left-[11rem] xl:left-[14rem]
+                  transform hover:top-0 hover:left-0 
+                  hover:scale-[3.5] hover:origin-top-left duration-300
+                  ${
+                    isButton1Hovered ||
+                    isButton2Hovered ||
+                    isButton3Hovered ||
+                    isButton4Hovered ||
+                    isButton5Hovered ||
+                    isButton6Hovered ||
+                    isButton7Hovered ||
+                    isButton8Hovered
+                      ? 'opacity-0'
+                      : 'opacity-100'
+                  }
+                  `}
+                  onMouseEnter={handleButton9MouseEnter}
+                  onMouseLeave={handleButton9MouseLeave}
                 />
               </motion.div>
             </div>
           </motion.div>
-
-          {/*           <motion.div
-            variants={fadeIn('left', 'tween', 0.1, 0.5)}
-            className="flex flex-col gap-4"
-          >
-            <div className="">
-              <Image
-                src={section3_title}
-                alt=""
-                unoptimized
-                quality={100}
-                className="object-cover w-[450px] lg:w-[550px] xl:w-[970px]"
-              />
-            </div>
-            <div className="">
-              <Image
-                src={section3_text}
-                alt=""
-                unoptimized
-                quality={100}
-                className="object-cover w-[325px] lg:w-[325px] xl:w-[970px]"
-              />
-            </div>
-          </motion.div> */}
         </div>{' '}
         {/* end of left side title img */}
       </motion.div>{' '}
