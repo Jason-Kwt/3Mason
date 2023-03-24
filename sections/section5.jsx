@@ -3,9 +3,6 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../utils/motion';
-import section5_title from '../assets/section5/section5_title.png';
-import section5_title2 from '../assets/section5/section5_title2.png';
-import section5_button from '../assets/section5/section5_button.png';
 
 function section5() {
   return (
