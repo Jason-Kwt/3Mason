@@ -21,7 +21,7 @@ function section4() {
   return (
     <section
       id="section4"
-      className="h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat overflow-hidden relative"
+      className="h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat overflow-hidden relative "
       //style={{ backgroundImage: `url(${bg_section4.src})` }}
     >
       {/* container part */}
@@ -30,10 +30,10 @@ function section4() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className="container mx-auto h-full w-full pt-24 pb-16 px-8 border-2"
+        className="container mx-auto h-full w-full pt-24 pb-16 px-8"
       >
         {/*       left side title img */}
-        <div className=" w-full h-full top-0 flex flex-col justify-center items-center gap-2 border-2">
+        <div className=" w-full h-full top-0 flex flex-col justify-center items-center gap-2 ">
           <div className="text-black text-center">
             <motion.h1
               variants={textVariant(0.2)}

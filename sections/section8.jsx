@@ -6,7 +6,7 @@ import Partner from '@/components/Partner';
 
 function section8() {
   return (
-    <div className="snap-start snap-always">
+    <div className="h-full w-screen snap-start snap-always scroll-m-0 overscroll-none overflow-hidden">
       <section
         id="section8"
         className="h-full w-screen relative bg-cover bg-center bg-no-repeat overflow-hidden bg-white"
@@ -67,7 +67,10 @@ function section8() {
         </motion.div>
       </section>
 
-      <section id="sub_section8" className="m-h-fit w-screen bg-white ">
+      <section
+        id="sub_section8"
+        className="h-[300vh] w-screen bg-white scroll-m-0 overscroll-none overflow-hidden"
+      >
         <div className="container mx-auto py-24 px-8 ">
           <div className="flex flex-col justify-center items-center">
             <h2 className="mb-6 lg:text-3xl text-2xl tracking-[0.1em] font-black font-syncopate">

@@ -1,3 +1,4 @@
+const { transform } = require('framer-motion');
 const { fontFamily } = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
@@ -31,6 +32,52 @@ module.exports = {
       fontFamily: {
         syncopate: ['var(--font-syncopate)', ...fontFamily.sans],
         raleway: ['var(--font-raleway)', ...fontFamily.sans],
+      },
+      animation: {
+        blob: 'blob 20s linear infinite',
+        blob2: 'blob2 40s linear infinite',
+      },
+      keyframes: {
+        blob: {
+          '0%': {
+            transform: 'translate(0px, 0px) scale(1)',
+          },
+          '22%': {
+            transform: 'translate(300px, -200px) scale(1.5)',
+          },
+          '44%': {
+            transform: 'translate(1800px, 100px) scale(1.2)',
+          },
+          '66%': {
+            transform: 'translate(700px, 1000px) scale(1.5)',
+          },
+          '88%': {
+            transform: 'translate(-100px, 400px) scale(0.8)',
+          },
+          '100%': {
+            transform: 'translate(0px, 0px) scale(1)',
+          },
+        },
+        blob2: {
+          '0%': {
+            transform: 'translate(0px, 0px) scale(1)',
+          },
+          '22%': {
+            transform: 'translate(-300px, 200px) scale(1.5)',
+          },
+          '44%': {
+            transform: 'translate(-1500px, -400px) scale(1)',
+          },
+          '66%': {
+            transform: 'translate(-700px, -800px) scale(1.5)',
+          },
+          '88%': {
+            transform: 'translate(500px, -400px) scale(0.8)',
+          },
+          '100%': {
+            transform: 'translate(0px, 0px) scale(1)',
+          },
+        },
       },
     },
   },

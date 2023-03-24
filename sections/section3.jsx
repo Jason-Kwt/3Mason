@@ -36,7 +36,7 @@ function section3() {
   return (
     <section
       id="section3"
-      className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat relative overflow-hidden"
+      className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat relative overflow-hidden bg-black  "
     >
       {/* container part */}
       <motion.div

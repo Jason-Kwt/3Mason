@@ -11,9 +11,9 @@ function section2() {
       className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat overflow-hidden bg-white"
     >
       {/* container part */}
-      <div className="container mx-auto h-full w-full py-24 px-8 border-2">
+      <div className="container mx-auto h-full w-full py-24 px-8">
         {/*       left side title img */}
-        <div className="w-full h-full flex flex-col justify-end items-center content-center border-2">
+        <div className="w-full h-full flex flex-col justify-end items-center content-center ">
           <div className="text-center  text-black ">
             <p className=" tracking-[0.5em] font-bold  text-xl ">
               UNLOCK IIIMASONS

@@ -6,7 +6,7 @@ function section10() {
   return (
     <section
       id="section10"
-      className=" h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat overflow-hidden"
+      className=" h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat overflow-hidden bg-black"
     >
       <div className="absolute w-full h-screen top-0 flex flex-col p-4 justify-center items-center">
         <div className="text-white text-center">
