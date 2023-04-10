@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import Partner from '@/components/Partner';
 
-function section8() {
+function Section8() {
   return (
     <div className="h-full w-screen snap-start snap-always scroll-m-0 overscroll-none overflow-hidden">
       <section
@@ -161,4 +161,4 @@ function section8() {
   );
 }
 
-export default section8;
+export default Section8;

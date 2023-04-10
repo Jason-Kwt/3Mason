@@ -9,7 +9,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 import bg_slide from '../public/bg_slide.png';
 
-function section3() {
+function Section3() {
   const [slideNumber, setSlideNumber] = useState(0);
 
   const handleSlideLeft = () => {
@@ -31,7 +31,7 @@ function section3() {
     }
   };
 
-  useEffect(() => {}, [slideNumber]);
+  useEffect(() => { }, [slideNumber]);
 
   return (
     <section
@@ -107,4 +107,4 @@ function section3() {
   );
 }
 
-export default section3;
+export default Section3;

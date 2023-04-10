@@ -4,11 +4,11 @@ import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
-function section1() {
+function Section1() {
   return (
     <section
       id="section1"
-      className=" h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat bg-section1"
+      className=" h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat bg-black"
     >
       <motion.div
         variants={staggerContainer}
@@ -61,4 +61,4 @@ function section1() {
   );
 }
 
-export default section1;
+export default Section1;

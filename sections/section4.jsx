@@ -15,7 +15,7 @@ import group_07 from '../assets/section4/group_07.png';
 import group_08 from '../assets/section4/group_08.png';
 import group_09 from '../assets/section4/group_09.png';
 
-function section4() {
+function Section4() {
   const [isButton1Hovered, setIsButton1Hovered] = useState(false);
   const [isButton2Hovered, setIsButton2Hovered] = useState(false);
   const [isButton3Hovered, setIsButton3Hovered] = useState(false);
@@ -50,7 +50,7 @@ function section4() {
     <section
       id="section4"
       className="h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat overflow-hidden relative "
-      //style={{ backgroundImage: `url(${bg_section4.src})` }}
+    //style={{ backgroundImage: `url(${bg_section4.src})` }}
     >
       {/* container part */}
       <motion.div
@@ -92,18 +92,17 @@ function section4() {
                     className={`w-[100px] md:w-[150px] xl:w-[180px] absolute left-0 top-0 
                   transform 
                   hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${
-                    isButton2Hovered ||
-                    isButton3Hovered ||
-                    isButton4Hovered ||
-                    isButton5Hovered ||
-                    isButton6Hovered ||
-                    isButton7Hovered ||
-                    isButton8Hovered ||
-                    isButton9Hovered
-                      ? 'opacity-0'
-                      : 'opacity-100'
-                  }
+                  ${isButton2Hovered ||
+                        isButton3Hovered ||
+                        isButton4Hovered ||
+                        isButton5Hovered ||
+                        isButton6Hovered ||
+                        isButton7Hovered ||
+                        isButton8Hovered ||
+                        isButton9Hovered
+                        ? 'opacity-0'
+                        : 'opacity-100'
+                      }
                   `}
                     onMouseEnter={handleButton1MouseEnter}
                     onMouseLeave={handleButton1MouseLeave}
@@ -117,18 +116,17 @@ function section4() {
                   className={`w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[4rem] md:left-[5.5rem] xl:left-[7rem]
                   transform hover:top-0 hover:left-0 
                   hover:scale-[3.5] hover:origin-top-left duration-300  
-                  ${
-                    isButton1Hovered ||
-                    isButton3Hovered ||
-                    isButton4Hovered ||
-                    isButton5Hovered ||
-                    isButton6Hovered ||
-                    isButton7Hovered ||
-                    isButton8Hovered ||
-                    isButton9Hovered
+                  ${isButton1Hovered ||
+                      isButton3Hovered ||
+                      isButton4Hovered ||
+                      isButton5Hovered ||
+                      isButton6Hovered ||
+                      isButton7Hovered ||
+                      isButton8Hovered ||
+                      isButton9Hovered
                       ? 'opacity-0'
                       : 'opacity-100'
-                  }
+                    }
                   `}
                   onMouseEnter={handleButton2MouseEnter}
                   onMouseLeave={handleButton2MouseLeave}
@@ -141,18 +139,17 @@ function section4() {
                   className={`w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[8rem] md:left-[11rem] xl:left-[14rem]
                   transform hover:top-0 hover:left-0 
                   hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${
-                    isButton1Hovered ||
-                    isButton2Hovered ||
-                    isButton4Hovered ||
-                    isButton5Hovered ||
-                    isButton6Hovered ||
-                    isButton7Hovered ||
-                    isButton8Hovered ||
-                    isButton9Hovered
+                  ${isButton1Hovered ||
+                      isButton2Hovered ||
+                      isButton4Hovered ||
+                      isButton5Hovered ||
+                      isButton6Hovered ||
+                      isButton7Hovered ||
+                      isButton8Hovered ||
+                      isButton9Hovered
                       ? 'opacity-0'
                       : 'opacity-100'
-                  }
+                    }
                   `}
                   onMouseEnter={handleButton3MouseEnter}
                   onMouseLeave={handleButton3MouseLeave}
@@ -165,18 +162,17 @@ function section4() {
                   className={`w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[12rem] md:left-[16.5rem] xl:left-[21rem]
                   transform hover:top-0 hover:left-0 
                   hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${
-                    isButton1Hovered ||
-                    isButton2Hovered ||
-                    isButton3Hovered ||
-                    isButton5Hovered ||
-                    isButton6Hovered ||
-                    isButton7Hovered ||
-                    isButton8Hovered ||
-                    isButton9Hovered
+                  ${isButton1Hovered ||
+                      isButton2Hovered ||
+                      isButton3Hovered ||
+                      isButton5Hovered ||
+                      isButton6Hovered ||
+                      isButton7Hovered ||
+                      isButton8Hovered ||
+                      isButton9Hovered
                       ? 'opacity-0'
                       : 'opacity-100'
-                  }
+                    }
                   `}
                   onMouseEnter={handleButton4MouseEnter}
                   onMouseLeave={handleButton4MouseLeave}
@@ -189,18 +185,17 @@ function section4() {
                   className={`w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[16rem] md:left-[22rem] xl:left-[28rem]
                   transform hover:top-0 hover:left-0 
                   hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${
-                    isButton1Hovered ||
-                    isButton2Hovered ||
-                    isButton3Hovered ||
-                    isButton4Hovered ||
-                    isButton6Hovered ||
-                    isButton7Hovered ||
-                    isButton8Hovered ||
-                    isButton9Hovered
+                  ${isButton1Hovered ||
+                      isButton2Hovered ||
+                      isButton3Hovered ||
+                      isButton4Hovered ||
+                      isButton6Hovered ||
+                      isButton7Hovered ||
+                      isButton8Hovered ||
+                      isButton9Hovered
                       ? 'opacity-0'
                       : 'opacity-100'
-                  }
+                    }
                   `}
                   onMouseEnter={handleButton5MouseEnter}
                   onMouseLeave={handleButton5MouseLeave}
@@ -216,18 +211,17 @@ function section4() {
                   left-[4rem] md:left-[5.5rem] xl:left-[6rem]
                   transform hover:top-0 hover:left-0 
                   hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${
-                    isButton1Hovered ||
-                    isButton2Hovered ||
-                    isButton3Hovered ||
-                    isButton4Hovered ||
-                    isButton5Hovered ||
-                    isButton7Hovered ||
-                    isButton8Hovered ||
-                    isButton9Hovered
+                  ${isButton1Hovered ||
+                      isButton2Hovered ||
+                      isButton3Hovered ||
+                      isButton4Hovered ||
+                      isButton5Hovered ||
+                      isButton7Hovered ||
+                      isButton8Hovered ||
+                      isButton9Hovered
                       ? 'opacity-0'
                       : 'opacity-100'
-                  }
+                    }
                   `}
                   onMouseEnter={handleButton6MouseEnter}
                   onMouseLeave={handleButton6MouseLeave}
@@ -242,18 +236,17 @@ function section4() {
                   left-[8rem] md:left-[11rem] xl:left-[14rem]
                   transform hover:top-0 hover:left-0 
                   hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${
-                    isButton1Hovered ||
-                    isButton2Hovered ||
-                    isButton3Hovered ||
-                    isButton4Hovered ||
-                    isButton5Hovered ||
-                    isButton6Hovered ||
-                    isButton8Hovered ||
-                    isButton9Hovered
+                  ${isButton1Hovered ||
+                      isButton2Hovered ||
+                      isButton3Hovered ||
+                      isButton4Hovered ||
+                      isButton5Hovered ||
+                      isButton6Hovered ||
+                      isButton8Hovered ||
+                      isButton9Hovered
                       ? 'opacity-0'
                       : 'opacity-100'
-                  }
+                    }
                   `}
                   onMouseEnter={handleButton7MouseEnter}
                   onMouseLeave={handleButton7MouseLeave}
@@ -268,18 +261,17 @@ function section4() {
                   left-[12rem] md:left-[16.5rem] xl:left-[22rem]
                   transform hover:top-0 hover:left-0 
                   hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${
-                    isButton1Hovered ||
-                    isButton2Hovered ||
-                    isButton3Hovered ||
-                    isButton4Hovered ||
-                    isButton5Hovered ||
-                    isButton6Hovered ||
-                    isButton7Hovered ||
-                    isButton9Hovered
+                  ${isButton1Hovered ||
+                      isButton2Hovered ||
+                      isButton3Hovered ||
+                      isButton4Hovered ||
+                      isButton5Hovered ||
+                      isButton6Hovered ||
+                      isButton7Hovered ||
+                      isButton9Hovered
                       ? 'opacity-0'
                       : 'opacity-100'
-                  }
+                    }
                   `}
                   onMouseEnter={handleButton8MouseEnter}
                   onMouseLeave={handleButton8MouseLeave}
@@ -296,18 +288,17 @@ function section4() {
                   left-[8rem] md:left-[11rem] xl:left-[14rem]
                   transform hover:top-0 hover:left-0 
                   hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${
-                    isButton1Hovered ||
-                    isButton2Hovered ||
-                    isButton3Hovered ||
-                    isButton4Hovered ||
-                    isButton5Hovered ||
-                    isButton6Hovered ||
-                    isButton7Hovered ||
-                    isButton8Hovered
+                  ${isButton1Hovered ||
+                      isButton2Hovered ||
+                      isButton3Hovered ||
+                      isButton4Hovered ||
+                      isButton5Hovered ||
+                      isButton6Hovered ||
+                      isButton7Hovered ||
+                      isButton8Hovered
                       ? 'opacity-0'
                       : 'opacity-100'
-                  }
+                    }
                   `}
                   onMouseEnter={handleButton9MouseEnter}
                   onMouseLeave={handleButton9MouseLeave}
@@ -324,4 +315,4 @@ function section4() {
   );
 }
 
-export default section4;
+export default Section4;

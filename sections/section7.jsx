@@ -10,7 +10,7 @@ import { exploreNFTs } from '@/constants';
 
 import bg_section7 from '../assets/section7/bg_section7.png';
 
-function section7() {
+function Section7() {
   const [active, setActive] = useState('nft-1');
 
   return (
@@ -56,4 +56,4 @@ function section7() {
   );
 }
 
-export default section7;
+export default Section7;

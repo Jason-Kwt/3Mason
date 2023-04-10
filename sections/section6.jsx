@@ -6,12 +6,12 @@ import { staggerContainer, textVariant } from '../utils/motion';
 
 import bg_section6 from '../assets/section6/bg_section6.png';
 
-function section6() {
+function Section6() {
   return (
     <section
       id="section6"
       className="bg-white h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat overflow-hidden"
-      //style={{ backgroundImage: `url(${bg_section6.src})` }}
+    //style={{ backgroundImage: `url(${bg_section6.src})` }}
     >
       <div
         className="absolute top-[4rem] left-[2rem] w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply  opacity-70 
@@ -76,4 +76,4 @@ function section6() {
   );
 }
 
-export default section6;
+export default Section6;

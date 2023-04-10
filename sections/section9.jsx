@@ -2,7 +2,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
-function section9() {
+function Section9() {
   return (
     <section
       id="section9"
@@ -33,4 +33,4 @@ function section9() {
   );
 }
 
-export default section9;
+export default Section9;
