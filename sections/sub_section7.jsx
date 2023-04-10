@@ -61,7 +61,7 @@ export default function sub_section7() {
 
                         loop={true}
                         modules={[EffectCoverflow, Pagination, Navigation]}
-                        className="p-8 "
+                        className=""
 
                     >
                         <SwiperSlide >
