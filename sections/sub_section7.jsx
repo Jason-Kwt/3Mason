@@ -42,7 +42,7 @@ export default function sub_section7() {
                 {/*       left side title img  flex justify-center items-center*/}
                 <motion.div
                     variants={textVariant(0.2)}
-                    className=" w-full  flex  justify-center items-start ">
+                    className=" w-full  flex  justify-center items-start py-8 ">
 
                     <Swiper
                         onSwiper={setSwiper}
@@ -61,7 +61,7 @@ export default function sub_section7() {
 
                         loop={true}
                         modules={[EffectCoverflow, Pagination, Navigation]}
-                        className="py-8 "
+                        className="p-8 "
 
                     >
                         <SwiperSlide >
