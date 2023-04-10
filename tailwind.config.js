@@ -15,6 +15,7 @@ module.exports = {
       section5: "url('../assets/section5/bg_section5.png')",
       section5_2: "url('../assets/section5/bg_section5_2.png')",
       section6: "url('../assets/section6/bg_section6.png')",
+      section7: "url('../assets/section7/bg_section7.png')",
     },
     extend: {
       scale: {
