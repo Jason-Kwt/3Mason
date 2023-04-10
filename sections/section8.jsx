@@ -17,7 +17,7 @@ function Section8() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className="container mx-auto h-full w-full py-24 px-8"
+          className="container mx-auto h-full w-full py-8 px-8"
         >
           <div className="w-full h-screen top-0 flex flex-col p-4 justify-center items-center">
             <div className="text-black   text-center">

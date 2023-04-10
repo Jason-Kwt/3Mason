@@ -6,7 +6,7 @@ import Section8 from '@/sections/Section8';
 import Navbar from '@/components/Navbar';
 import { useInView } from 'react-intersection-observer';
 
-function PedigreeIndex() {
+export default function GenesisIndex() {
   const [section7Ref, section7InView] = useInView({ threshold: 0.5 });
   const [section8Ref, section8InView] = useInView({ threshold: 0.5 });
 
@@ -32,4 +32,3 @@ function PedigreeIndex() {
   );
 }
 
-export default PedigreeIndex;

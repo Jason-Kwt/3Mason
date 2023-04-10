@@ -1,10 +1,9 @@
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  padding: 0%;
   width: 680px;
   border-radius: 35px;
-  opacity: 90%;
+  opacity: 100%;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
 }
 

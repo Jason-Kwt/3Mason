@@ -42,7 +42,7 @@ function Section6() {
       >
         <div className="absolute w-full h-screen top-0 overflow-hidden">
 
-          <div className="overflow-hidden h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth border-2 ">
+          <div className="overflow-hidden h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth ">
             <div className='h-screen w-screen snap-start snap-always relative  flex flex-col p-4 justify-center items-center'>
               <div className="text-white text-center p-8">
                 <motion.h2
@@ -55,7 +55,7 @@ function Section6() {
             </div>
             <div className='h-screen w-screen snap-start snap-always relative  flex flex-col p-4 justify-center items-center'>
               <div className="text-white text-center p-8">
-                <p className="font-base text-lg tracking-[0.3em] my-8">
+                <p className="font-base text-lg tracking-[0.3em] my-8 text-gray-400">
                   THE IIIMASONS VALUES
                 </p>
                 <motion.h2

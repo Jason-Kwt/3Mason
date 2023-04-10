@@ -72,9 +72,9 @@ function Section4() {
             <hr className="w-24 h-px mx-auto  border-0 bg-gray-700 my-4 rounded "></hr>
             <motion.p
               variants={textVariant(0.5)}
-              className="md:text-lg text-base tracking-[0.1em] font-thin font-syncopate"
+              className="text-base tracking-[0.1em] font-thin font-syncopate uppercase"
             >
-              Unlock IIImasons
+              NINE commandments
             </motion.p>
           </div>
 

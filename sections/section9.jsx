@@ -1,36 +1,22 @@
 'use client';
 import React from 'react';
-import Typewriter from 'typewriter-effect';
 
-function Section9() {
+export default function Section9() {
   return (
     <section
       id="section9"
       className=" h-screen w-screen snap-start snap-always relative bg-cover bg-center bg-no-repeat overflow-hidden bg-black  "
     >
-      <div className="absolute w-full h-screen top-0 flex flex-col p-4 justify-center items-center">
+      <div className="container mx-auto w-full h-screen  flex flex-col p-4 justify-end items-center py-24 px-8">
         <div className="text-white text-center">
-          <h1 className="lg:text-9xl md:text-7xl text-4xl tracking-[0.1em] font-black">
-            Section9
-          </h1>
-          <div className="mt-8 lg:mt-16">
-            <Typewriter
-              options={{
-                strings: ['MASONS IN WEB3', 'IN TRUST WE BUILD'],
-                changeDelay: 2,
-                ChangeDeleteSpeed: 20,
-                autoStart: true,
-                loop: true,
-                wrapperClassName:
-                  'text-2xl lg:text-4xl  tracking-[0.2em] font-semibold',
-                cursorClassName: 'text-2xl lg:text-4xl  tracking-[0.2em]',
-              }}
-            />
-          </div>
+          <p className="font-thin text-sm font-raleway tracking-[0.3em] uppercase leading-9">Collaborate with NEW CIGAR BRAND</p>
+          <h2 className="2xl:text-5xl xl:text-4xl  lg:text-3xl md:text-2xl text-xl tracking-[0.1em] font-black font-syncopate">
+            CIGAR BRAND
+          </h2>
         </div>
+        <div className='bg-white rounded-2xl w-[1400px] h-[560px] mt-8'></div>
       </div>
     </section>
   );
 }
 
-export default Section9;

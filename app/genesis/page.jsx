@@ -1,16 +1,16 @@
-import PedigreeIndex from './PedigreeIndex';
+import GenesisIndex from './GenesisIndex';
 
 export const metadata = {
   title: 'pedigreePage',
   description: 'this is pedigreePage',
 };
 
-function pedigreePage() {
+export default function genesisPage() {
   return (
     <>
-      <PedigreeIndex />
+      <GenesisIndex />
     </>
   );
 }
 
-export default pedigreePage;
+

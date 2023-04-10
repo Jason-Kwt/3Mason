@@ -16,8 +16,8 @@ function Navbar({ textColor, bgColor }) {
   const navigation = [
     { name: 'HOME', href: '/' },
     { name: 'ABOUT', href: '/about' },
-    { name: 'PEDIGREE', href: '/pedigree' },
-    { name: 'BIBLE', href: '/bible' },
+    { name: 'GENESIS', href: '/genesis' },
+    { name: 'ALELIER', href: '/alelier' },
   ];
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 

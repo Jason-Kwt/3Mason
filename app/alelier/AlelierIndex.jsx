@@ -6,7 +6,7 @@ import Section10 from '@/sections/Section10';
 import Navbar from '@/components/Navbar';
 import { useInView } from 'react-intersection-observer';
 
-function BibleIndex() {
+export default function AlelierIndex() {
   const [section9Ref, section9InView] = useInView({ threshold: 0.5 });
   const [section10Ref, section10InView] = useInView({ threshold: 0.5 });
   return (
@@ -27,4 +27,3 @@ function BibleIndex() {
   );
 }
 
-export default BibleIndex;
