@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
-function Section5() {
+export default function section5() {
   return (
     <section
       id="section5"
@@ -56,4 +56,3 @@ function Section5() {
   );
 }
 
-export default Section5;

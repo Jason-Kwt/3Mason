@@ -1,10 +1,10 @@
 'use client';
-import Section1 from '@/sections/Section1';
-import Section2 from '@/sections/Section2';
-import Section3 from '@/sections/Section3';
-import Section4 from '@/sections/Section4';
+import Section1 from '@/sections/section1';
+import Section2 from '@/sections/section2';
+import Section3 from '@/sections/section3';
+import Section4 from '@/sections/section4';
 
-import SubSection3 from '@/sections/SubSection3';
+import SubSection3 from '@/sections/subSection3';
 
 import Navbar from '@/components/Navbar';
 import { useInView } from 'react-intersection-observer';

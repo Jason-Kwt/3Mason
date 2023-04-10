@@ -6,7 +6,7 @@ import { staggerContainer, textVariant } from '../utils/motion';
 
 import bg_section6 from '../assets/section6/bg_section6.png';
 
-function Section6() {
+export default function section6() {
   return (
     <section
       id="section6"
@@ -88,4 +88,3 @@ function Section6() {
   );
 }
 
-export default Section6;

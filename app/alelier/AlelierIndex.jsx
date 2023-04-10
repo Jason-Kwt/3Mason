@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
-import Section9 from '@/sections/Section9';
-import Section10 from '@/sections/Section10';
+import Section9 from '@/sections/section9';
+import Section10 from '@/sections/section10';
 
 import Navbar from '@/components/Navbar';
 import { useInView } from 'react-intersection-observer';

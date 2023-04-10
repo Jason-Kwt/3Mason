@@ -15,7 +15,7 @@ import group_07 from '../assets/section4/group_07.png';
 import group_08 from '../assets/section4/group_08.png';
 import group_09 from '../assets/section4/group_09.png';
 
-function Section4() {
+export default function section4() {
   const [isButton1Hovered, setIsButton1Hovered] = useState(false);
   const [isButton2Hovered, setIsButton2Hovered] = useState(false);
   const [isButton3Hovered, setIsButton3Hovered] = useState(false);
@@ -315,4 +315,3 @@ function Section4() {
   );
 }
 
-export default Section4;

@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 import section2_Lodge from '../assets/section2/section2_Lodge.png';
 
-function Section2() {
+export default function section2() {
   return (
     <section
       id="section2"
@@ -32,4 +32,3 @@ function Section2() {
   );
 }
 
-export default Section2;

@@ -19,7 +19,7 @@ import "swiper/css/navigation";
 import "../app/genesis/styles.css";
 
 
-const SubSection7 = () => {
+export default function subSection7() {
 
     const [swiper, setSwiper] = useState(null);
 
@@ -125,4 +125,3 @@ const SubSection7 = () => {
     );
 };
 
-export default SubSection7;

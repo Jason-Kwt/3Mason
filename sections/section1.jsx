@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 
-function Section1() {
+export default function section1() {
   return (
     <section
       id="section1"
@@ -48,4 +48,3 @@ function Section1() {
   );
 }
 
-export default Section1;

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, staggerContainer } from '../utils/motion';
 
 
-export default function SubSection3() {
+export default function subSection3() {
   return (
     <section
       id="section5"

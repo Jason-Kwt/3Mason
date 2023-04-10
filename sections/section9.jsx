@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 
-export default function Section9() {
+export default function section9() {
   return (
     <section
       id="section9"

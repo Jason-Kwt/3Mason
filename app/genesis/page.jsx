@@ -1,8 +1,8 @@
 import GenesisIndex from './GenesisIndex';
 
 export const metadata = {
-  title: 'pedigreePage',
-  description: 'this is pedigreePage',
+  title: 'GenesisePage',
+  description: 'this is GenesisPage',
 };
 
 export default function genesisPage() {
