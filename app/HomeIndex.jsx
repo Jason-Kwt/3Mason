@@ -4,7 +4,7 @@ import Section2 from '@/sections/section2';
 import Section3 from '@/sections/section3';
 import Section4 from '@/sections/section4';
 
-import SubSection3 from '@/sections/subSection3';
+import SubSection3 from '@/sections/sub_section3';
 
 import Navbar from '@/components/Navbar';
 import { useInView } from 'react-intersection-observer';
