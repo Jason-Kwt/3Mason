@@ -12,7 +12,7 @@ function AboutIndex() {
   return (
     <>
       <Navbar
-        textColor={section6InView ? 'black' : 'white'}
+        textColor={section6InView ? 'white' : 'white'}
         bgColor={section6InView ? 'transparent' : 'transparent'}
       />
       <main className="overflow-hidden h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
