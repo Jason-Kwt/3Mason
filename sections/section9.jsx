@@ -14,7 +14,15 @@ export default function section9() {
             CIGAR BRAND
           </h2>
         </div>
-        <div className='bg-white rounded-2xl w-[1400px] h-[560px] mt-8'></div>
+
+        <div className='group'>
+          <div className='bg-white rounded-2xl w-[1400px] h-[560px] mt-8 flex justify-center items-center  group-hover:bg-gray-300'>
+            <p className='hidden group-hover:flex text-black text-center font-black text-xl font-raleway tracking-[0.3em] uppercase leading-9'>
+              about cigarrrrr
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
   );

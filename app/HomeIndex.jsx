@@ -7,6 +7,7 @@ import Section4 from '@/sections/section4';
 import SubSection3 from '@/sections/sub_section3';
 
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import { useInView } from 'react-intersection-observer';
 
 export default function HomeIndex() {
@@ -34,6 +35,7 @@ export default function HomeIndex() {
         <section ref={section4Ref}>
           <Section4 />
         </section>
+        <Footer />
       </main>
     </>
   );

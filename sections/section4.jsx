@@ -16,6 +16,55 @@ import group_08 from '../assets/section4/group_08.png';
 import group_09 from '../assets/section4/group_09.png';
 
 export default function section4() {
+
+  const [btnClicked, setBtnClicked] = useState(false);
+  const [isButton1Clicked, setIsButton1Clicked] = useState(false);
+  const [isButton2Clicked, setIsButton2Clicked] = useState(false);
+  const [isButton3Clicked, setIsButton3Clicked] = useState(false);
+  const [isButton4Clicked, setIsButton4Clicked] = useState(false);
+  const [isButton5Clicked, setIsButton5Clicked] = useState(false);
+  const [isButton6Clicked, setIsButton6Clicked] = useState(false);
+  const [isButton7Clicked, setIsButton7Clicked] = useState(false);
+  const [isButton8Clicked, setIsButton8Clicked] = useState(false);
+  const [isButton9Clicked, setIsButton9Clicked] = useState(false);
+
+  const handleButton1Clicked = () => {
+    setIsButton1Clicked(!isButton1Clicked)
+    setBtnClicked(!btnClicked)
+  }
+  const handleButton2Clicked = () => {
+    setIsButton2Clicked(!isButton2Clicked)
+    setBtnClicked(!btnClicked)
+  }
+  const handleButton3Clicked = () => {
+    setIsButton3Clicked(!isButton3Clicked)
+    setBtnClicked(!btnClicked)
+  }
+  const handleButton4Clicked = () => {
+    setIsButton4Clicked(!isButton4Clicked)
+    setBtnClicked(!btnClicked)
+  }
+  const handleButton5Clicked = () => {
+    setIsButton5Clicked(!isButton5Clicked)
+    setBtnClicked(!btnClicked)
+  }
+  const handleButton6Clicked = () => {
+    setIsButton6Clicked(!isButton6Clicked)
+    setBtnClicked(!btnClicked)
+  }
+  const handleButton7Clicked = () => {
+    setIsButton7Clicked(!isButton7Clicked)
+    setBtnClicked(!btnClicked)
+  }
+  const handleButton8Clicked = () => {
+    setIsButton8Clicked(!isButton8Clicked)
+    setBtnClicked(!btnClicked)
+  }
+  const handleButton9Clicked = () => {
+    setIsButton9Clicked(!isButton9Clicked)
+    setBtnClicked(!btnClicked)
+  }
+
   const [isButton1Hovered, setIsButton1Hovered] = useState(false);
   const [isButton2Hovered, setIsButton2Hovered] = useState(false);
   const [isButton3Hovered, setIsButton3Hovered] = useState(false);
@@ -89,23 +138,15 @@ export default function section4() {
                   <Image
                     src={group_01}
                     alt=""
-                    className={`w-[100px] md:w-[150px] xl:w-[180px] absolute left-0 top-0 
-                  transform 
-                  hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${isButton2Hovered ||
-                        isButton3Hovered ||
-                        isButton4Hovered ||
-                        isButton5Hovered ||
-                        isButton6Hovered ||
-                        isButton7Hovered ||
-                        isButton8Hovered ||
-                        isButton9Hovered
-                        ? 'opacity-0'
-                        : 'opacity-100'
+                    className={`w-[100px] md:w-[150px] xl:w-[180px] absolute left-0 top-0
+                    transform  duration-300
+                  ${isButton1Clicked ? `scale-[3.5] origin-top-left` : ``}
+                  ${!isButton1Clicked && btnClicked
+                        ? 'hidden'
+                        : 'visible'
                       }
                   `}
-                    onMouseEnter={handleButton1MouseEnter}
-                    onMouseLeave={handleButton1MouseLeave}
+                    onClick={handleButton1Clicked}
                   />
                 </div>
               </motion.div>
@@ -113,92 +154,60 @@ export default function section4() {
                 <Image
                   src={group_02}
                   alt=""
-                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[4rem] md:left-[5.5rem] xl:left-[7rem]
-                  transform hover:top-0 hover:left-0 
-                  hover:scale-[3.5] hover:origin-top-left duration-300  
-                  ${isButton1Hovered ||
-                      isButton3Hovered ||
-                      isButton4Hovered ||
-                      isButton5Hovered ||
-                      isButton6Hovered ||
-                      isButton7Hovered ||
-                      isButton8Hovered ||
-                      isButton9Hovered
-                      ? 'opacity-0'
-                      : 'opacity-100'
+                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute 
+                  transform duration-300
+                  ${isButton2Clicked ? ` scale-[3.5] origin-top-left top-0 left-0` : `top-0 left-[4rem] md:left-[5.5rem] xl:left-[7rem]`}
+                  ${!isButton2Clicked && btnClicked
+                      ? 'hidden'
+                      : 'visible'
                     }
                   `}
-                  onMouseEnter={handleButton2MouseEnter}
-                  onMouseLeave={handleButton2MouseLeave}
+                  onClick={handleButton2Clicked}
                 />
               </motion.div>
               <motion.div initial="hidden" whileInView="show">
                 <Image
                   src={group_03}
                   alt=""
-                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[8rem] md:left-[11rem] xl:left-[14rem]
-                  transform hover:top-0 hover:left-0 
-                  hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${isButton1Hovered ||
-                      isButton2Hovered ||
-                      isButton4Hovered ||
-                      isButton5Hovered ||
-                      isButton6Hovered ||
-                      isButton7Hovered ||
-                      isButton8Hovered ||
-                      isButton9Hovered
-                      ? 'opacity-0'
-                      : 'opacity-100'
+                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute 
+                  transform duration-300
+                  ${isButton3Clicked ? ` scale-[3.5] origin-top-left top-0 left-0` : `top-0 left-[8rem] md:left-[11rem] xl:left-[14rem]`}
+                  ${!isButton3Clicked && btnClicked
+                      ? 'hidden'
+                      : 'visible'
                     }
                   `}
-                  onMouseEnter={handleButton3MouseEnter}
-                  onMouseLeave={handleButton3MouseLeave}
+                  onClick={handleButton3Clicked}
                 />
               </motion.div>
               <motion.div initial="hidden" whileInView="show">
                 <Image
                   src={group_04}
                   alt=""
-                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[12rem] md:left-[16.5rem] xl:left-[21rem]
-                  transform hover:top-0 hover:left-0 
-                  hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${isButton1Hovered ||
-                      isButton2Hovered ||
-                      isButton3Hovered ||
-                      isButton5Hovered ||
-                      isButton6Hovered ||
-                      isButton7Hovered ||
-                      isButton8Hovered ||
-                      isButton9Hovered
-                      ? 'opacity-0'
-                      : 'opacity-100'
+                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute 
+                  transform  duration-300
+                  ${isButton4Clicked ? ` scale-[3.5] origin-top-left top-0 left-0` : `top-0 left-[12rem] md:left-[16.5rem] xl:left-[21rem]`}
+                  ${!isButton4Clicked && btnClicked
+                      ? 'hidden'
+                      : 'visible'
                     }
                   `}
-                  onMouseEnter={handleButton4MouseEnter}
-                  onMouseLeave={handleButton4MouseLeave}
+                  onClick={handleButton4Clicked}
                 />
               </motion.div>
               <motion.div initial="hidden" whileInView="show">
                 <Image
                   src={group_05}
                   alt=""
-                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute top-0 left-[16rem] md:left-[22rem] xl:left-[28rem]
-                  transform hover:top-0 hover:left-0 
-                  hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${isButton1Hovered ||
-                      isButton2Hovered ||
-                      isButton3Hovered ||
-                      isButton4Hovered ||
-                      isButton6Hovered ||
-                      isButton7Hovered ||
-                      isButton8Hovered ||
-                      isButton9Hovered
-                      ? 'opacity-0'
-                      : 'opacity-100'
+                  className={`w-[100px] md:w-[150px] xl:w-[180px] absolute 
+                  transform  duration-300
+                  ${isButton5Clicked ? ` scale-[3.5] origin-top-left top-0 left-0` : `top-0 left-[16rem] md:left-[22rem] xl:left-[28rem]`}
+                  ${!isButton5Clicked && btnClicked
+                      ? 'hidden'
+                      : 'visible'
                     }
                   `}
-                  onMouseEnter={handleButton5MouseEnter}
-                  onMouseLeave={handleButton5MouseLeave}
+                  onClick={handleButton5Clicked}
                 />
               </motion.div>
               {/* ROW 2 */}
@@ -207,24 +216,15 @@ export default function section4() {
                   src={group_06}
                   alt=""
                   className={`w-[100px] md:w-[150px] xl:w-[180px] absolute 
-                  top-[6rem] md:top-[9rem] xl:top-[11rem] 
-                  left-[4rem] md:left-[5.5rem] xl:left-[6rem]
-                  transform hover:top-0 hover:left-0 
-                  hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${isButton1Hovered ||
-                      isButton2Hovered ||
-                      isButton3Hovered ||
-                      isButton4Hovered ||
-                      isButton5Hovered ||
-                      isButton7Hovered ||
-                      isButton8Hovered ||
-                      isButton9Hovered
-                      ? 'opacity-0'
-                      : 'opacity-100'
+                  transform  duration-300
+                  ${isButton6Clicked ? ` scale-[3.5] origin-top-left top-0 left-0` : `top-[6rem] md:top-[9rem] xl:top-[11rem] 
+                  left-[4rem] md:left-[5.5rem] xl:left-[6rem]`}
+                  ${!isButton6Clicked && btnClicked
+                      ? 'hidden'
+                      : 'visible'
                     }
                   `}
-                  onMouseEnter={handleButton6MouseEnter}
-                  onMouseLeave={handleButton6MouseLeave}
+                  onClick={handleButton6Clicked}
                 />
               </motion.div>
               <motion.div initial="hidden" whileInView="show">
@@ -232,24 +232,15 @@ export default function section4() {
                   src={group_07}
                   alt=""
                   className={`w-[100px] md:w-[150px] xl:w-[180px] absolute 
-                  top-[6rem] md:top-[9rem] xl:top-[11rem] 
-                  left-[8rem] md:left-[11rem] xl:left-[14rem]
-                  transform hover:top-0 hover:left-0 
-                  hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${isButton1Hovered ||
-                      isButton2Hovered ||
-                      isButton3Hovered ||
-                      isButton4Hovered ||
-                      isButton5Hovered ||
-                      isButton6Hovered ||
-                      isButton8Hovered ||
-                      isButton9Hovered
-                      ? 'opacity-0'
-                      : 'opacity-100'
+                  transform  duration-300
+                  ${isButton7Clicked ? ` scale-[3.5] origin-top-left top-0 left-0` : `top-[6rem] md:top-[9rem] xl:top-[11rem] 
+                  left-[8rem] md:left-[11rem] xl:left-[14rem]`}
+                  ${!isButton7Clicked && btnClicked
+                      ? 'hidden'
+                      : 'visible'
                     }
                   `}
-                  onMouseEnter={handleButton7MouseEnter}
-                  onMouseLeave={handleButton7MouseLeave}
+                  onClick={handleButton7Clicked}
                 />
               </motion.div>
               <motion.div initial="hidden" whileInView="show">
@@ -257,24 +248,14 @@ export default function section4() {
                   src={group_08}
                   alt=""
                   className={`w-[100px] md:w-[150px] xl:w-[180px] absolute 
-                  top-[6rem] md:top-[9rem] xl:top-[11rem] 
-                  left-[12rem] md:left-[16.5rem] xl:left-[22rem]
-                  transform hover:top-0 hover:left-0 
-                  hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${isButton1Hovered ||
-                      isButton2Hovered ||
-                      isButton3Hovered ||
-                      isButton4Hovered ||
-                      isButton5Hovered ||
-                      isButton6Hovered ||
-                      isButton7Hovered ||
-                      isButton9Hovered
-                      ? 'opacity-0'
-                      : 'opacity-100'
+                  transform  duration-300 
+                  ${isButton8Clicked ? `top-0 left-0 scale-[3.5] origin-top-left` : `top-[6rem] md:top-[9rem] xl:top-[11rem] left-[12rem] md:left-[16.5rem] xl:left-[22rem]`}
+                ${!isButton8Clicked && btnClicked
+                      ? 'hidden'
+                      : 'visible'
                     }
                   `}
-                  onMouseEnter={handleButton8MouseEnter}
-                  onMouseLeave={handleButton8MouseLeave}
+                  onClick={handleButton8Clicked}
                 />
               </motion.div>
               {/* ROW 3 */}
@@ -284,24 +265,14 @@ export default function section4() {
                   src={group_09}
                   alt=""
                   className={`w-[100px] md:w-[150px] xl:w-[180px] absolute 
-                  top-[12rem] md:top-[18rem] xl:top-[22rem] 
-                  left-[8rem] md:left-[11rem] xl:left-[14rem]
-                  transform hover:top-0 hover:left-0 
-                  hover:scale-[3.5] hover:origin-top-left duration-300
-                  ${isButton1Hovered ||
-                      isButton2Hovered ||
-                      isButton3Hovered ||
-                      isButton4Hovered ||
-                      isButton5Hovered ||
-                      isButton6Hovered ||
-                      isButton7Hovered ||
-                      isButton8Hovered
-                      ? 'opacity-0'
-                      : 'opacity-100'
+                  transform duration-300
+                  ${isButton9Clicked ? `top-0 left-0 scale-[3.5] origin-top-left` : `top-[12rem] md:top-[18rem] xl:top-[22rem] left-[8rem] md:left-[11rem] xl:left-[14rem]`}
+                ${!isButton9Clicked && btnClicked
+                      ? 'hidden'
+                      : 'visible'
                     }
                   `}
-                  onMouseEnter={handleButton9MouseEnter}
-                  onMouseLeave={handleButton9MouseLeave}
+                  onClick={handleButton9Clicked}
                 />
               </motion.div>
             </div>

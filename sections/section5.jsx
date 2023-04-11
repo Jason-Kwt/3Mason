@@ -42,8 +42,8 @@ export default function section5() {
               world.
             </p>
 
-            <button className="mt-8 bg-white px-[9rem] py-2 rounded-lg">
-              <p className="text-cent text-black font-bold text-sm tracking-[0.2em]">
+            <button className="mt-8 bg-white px-[9rem] py-2 rounded-lg opacity-50 cursor-not-allowed">
+              <p className="text-cent text-black font-bold text-sm tracking-[0.2em] opacity-50 cursor-not-allowed">
                 BECOME A IIIMASON
               </p>
             </button>
