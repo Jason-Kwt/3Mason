@@ -21,9 +21,7 @@ export default function GenesisIndex() {
         }
       />
       <main className="overflow-hidden h-screen w-screen  overflow-y-scroll snap-y snap-mandatory scroll-smooth">
-        <section ref={section7Ref}>
-          <SubSection7 />
-        </section>
+
         <section ref={section8Ref}>
           <Section8 />
         </section>

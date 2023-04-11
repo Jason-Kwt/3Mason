@@ -41,7 +41,7 @@ export default function sub_section7() {
                 className=" container mx-auto h-full w-full  py-24 px-8 ">
                 {/*       left side title img  flex justify-center items-center*/}
                 <motion.div
-                    variants={textVariant(0.2)}
+                    variants={textVariant(0.7)}
                     className=" w-full  flex  justify-center items-start py-8 ">
 
                     <Swiper
@@ -65,28 +65,28 @@ export default function sub_section7() {
 
                     >
                         <SwiperSlide >
-                            <Image width={680} height={400} alt='' src="/image1.png" />
+                            <Image width={680} height={400} alt='' src="/image1.png" priority />
                         </SwiperSlide>
                         <SwiperSlide >
-                            <Image width={680} height={400} alt='' src="/image1.png" />
+                            <Image width={680} height={400} alt='' src="/image1.png" priority />
                         </SwiperSlide>
                         <SwiperSlide >
-                            <Image width={680} height={400} alt='' src="/image1.png" />
+                            <Image width={680} height={400} alt='' src="/image1.png" priority />
                         </SwiperSlide>
                         <SwiperSlide >
-                            <Image width={680} height={400} alt='' src="/image1.png" />
+                            <Image width={680} height={400} alt='' src="/image1.png" priority />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image width={680} height={400} alt='' src="/image1.png" />
+                            <Image width={680} height={400} alt='' src="/image1.png" priority />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image width={680} height={400} alt='' src="/image1.png" />
+                            <Image width={680} height={400} alt='' src="/image1.png" priority />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image width={680} height={400} alt='' src="/image1.png" />
+                            <Image width={680} height={400} alt='' src="/image1.png" priority />
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Image width={680} height={400} alt='' src="/image1.png" />
+                            <Image width={680} height={400} alt='' src="/image1.png" priority />
                         </SwiperSlide>
 
                     </Swiper>

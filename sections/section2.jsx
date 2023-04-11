@@ -10,7 +10,7 @@ export default function section2() {
       id="section2"
       className=" h-screen w-screen snap-start snap-always bg-cover bg-center bg-no-repeat overflow-hidden"
     >
-      <div className='h-full w-full bg-white rounded-t-[10rem]'>
+      <div className='h-full w-full bg-white rounded-t-[10rem] transition duration-300'>
 
         {/* container part */}
         <div className="container mx-auto h-full w-full py-24 px-8 ">
