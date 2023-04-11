@@ -10,9 +10,9 @@ export default function Footer() {
                     <div className="h-full text-white text-center flex flex-col justify-center items-center">
                         <div>
                             <h4
-                                className="2xl:text-5xl lg:text-4xl md:text-3xl text-2xl tracking-[0.1em] font-black font-syncopate"
+                                className="2xl:text-4xl lg:text-3xl md:text-2xl text-xl tracking-[0.1em] font-black font-syncopate"
                             >
-                                "IN 3MASON WE BUIDL"
+                                &apos;&apos;IN 3MASON WE BUIDL&apos;&apos;
                             </h4>
                         </div>
                         <div className='flex gap-32 justify-center items-center my-16'>
